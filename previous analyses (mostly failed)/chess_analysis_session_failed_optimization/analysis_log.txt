@@ -1,0 +1,23 @@
+2025-07-07 18:10:49,810 - MainProcess - INFO - Oracle: stockfish_full_1. Model builders: 32 engines.
+2025-07-07 18:11:10,278 - MainProcess - WARNING - New PGN/script version detected or no session found. Starting a new session.
+2025-07-07 18:11:10,278 - MainProcess - INFO - --- Starting Optimization Mode ---
+2025-07-07 18:11:10,278 - MainProcess - INFO - Step 1: Collecting simulation data from the training PGN...
+2025-07-07 18:11:10,480 - MainProcess - INFO - 
+--- Analyzing Game 1: Desjardins373 vs. tratohecho ---
+2025-07-07 18:45:03,272 - MainProcess - INFO - Saved progress for game 2025.03.06_Desjardins373_tratohecho_0 to session file.
+2025-07-07 18:45:03,279 - MainProcess - INFO - 
+--- Analyzing Game 2: Desjardins373 vs. JLundang ---
+2025-07-07 18:49:32,789 - SpawnPoolWorker-2 - ERROR - Worker 'model_simulation' for stockfish_elo_3190 on FEN 'r6k/1p3rpn/p1p1N2p/8/6n1/4B1R1/4qPP1/5NKR w - - 6 29' failed: 
+2025-07-07 18:55:30,468 - SpawnPoolWorker-2 - ERROR - Worker 'model_simulation' for Leela_nodes_10k on FEN 'rn1q1rk1/1p4pn/p1pbp2p/8/8/5N2/PPP2PPP/RNBQR1K1 w - - 2 12' failed: 
+2025-07-07 18:55:30,469 - SpawnPoolWorker-1 - ERROR - Worker 'model_simulation' for Leela_nodes_10k on FEN 'r4rk1/1p1n2pn/p1p1R2p/8/3N4/4B3/PP1N1PP1/3q2KR w - - 8 19' failed: 
+2025-07-07 19:21:13,247 - SpawnPoolWorker-1 - ERROR - Worker 'model_simulation' for maia_1200 on FEN 'rn3rk1/1p4pn/p1p1R2p/8/8/5N2/PPP2PPK/RNBq4 w - - 0 14' failed: 
+2025-07-07 19:21:23,286 - SpawnPoolWorker-1 - ERROR - Worker 'model_simulation' for maia_1200 on FEN 'rn1q1rk1/1p4pn/p1pbp2p/8/8/5N2/PPP2PPP/RNBQR1K1 w - - 2 12' failed: 
+2025-07-07 19:25:33,567 - MainProcess - INFO - Saved progress for game 2025.03.07_Desjardins373_JLundang_750 to session file.
+2025-07-07 19:25:33,730 - MainProcess - INFO - 
+--- Analyzing Game 3: dsinghteotia vs. Desjardins373 ---
+2025-07-07 20:07:59,895 - MainProcess - INFO - Saved progress for game 2025.03.07_dsinghteotia_Desjardins373_1556 to session file.
+2025-07-07 20:07:59,899 - MainProcess - INFO - 
+--- Analyzing Game 4: Desjardins373 vs. La_Toupie ---
+2025-07-07 20:51:08,863 - MainProcess - INFO - Saved progress for game 2025.03.07_Desjardins373_La_Toupie_2096 to session file.
+2025-07-07 20:51:08,888 - MainProcess - INFO - 
+--- Analyzing Game 5: jack4467 vs. Desjardins373 ---

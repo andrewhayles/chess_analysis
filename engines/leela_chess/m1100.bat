@@ -1,0 +1,2 @@
+@echo off
+C:\Users\desja\Documents\Python_programs\chess_study\engines\leela_chess\lc0.exe --backend=onnx-cpu --weights="C:\Users\desja\Documents\Python_programs\chess_study\engines\leela_chess\maia weights\m1100.pb"

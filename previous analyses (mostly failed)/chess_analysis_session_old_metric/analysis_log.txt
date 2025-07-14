@@ -1,0 +1,112 @@
+2025-07-06 13:14:45,981 - MainProcess - INFO - Loaded 1 oracle engine(s) and 28 model-building engines.
+2025-07-06 13:14:56,236 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-06 13:14:56,236 - MainProcess - INFO - Found 84 games remaining to analyze for player Desjardins373.
+2025-07-06 13:14:56,236 - MainProcess - INFO - --- Starting Analysis for Game 1: sananabdulla10 vs. Desjardins373 ---
+2025-07-06 13:14:56,236 - MainProcess - INFO - Generating ground truth template...
+2025-07-06 13:17:41,005 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-06 13:17:41,007 - MainProcess - INFO - Selected all 25 available engines plus 3 required engines.
+2025-07-06 13:17:41,009 - MainProcess - INFO - Selected a sparse set of 15 engines for analysis, including 3 required engines.
+2025-07-06 13:17:41,009 - MainProcess - INFO - --- Running Checkpoint: Depth First Strategy ---
+2025-07-06 13:17:41,009 - MainProcess - INFO - Running engine simulations with params: depth_first...
+2025-07-06 13:17:45,435 - SpawnPoolWorker-3 - WARNING - <UciProtocol (pid=17836)>: stderr >>        _
+2025-07-06 13:17:45,437 - SpawnPoolWorker-3 - WARNING - <UciProtocol (pid=17836)>: stderr >> |   _ | |
+2025-07-06 13:17:45,437 - SpawnPoolWorker-3 - WARNING - <UciProtocol (pid=17836)>: stderr >> |_ |_ |_| v0.31.2 built Oct 20 2024
+2025-07-06 13:17:45,451 - SpawnPoolWorker-4 - WARNING - <UciProtocol (pid=8748)>: stderr >>        _
+2025-07-06 13:17:45,453 - SpawnPoolWorker-3 - WARNING - <UciProtocol (pid=17836)>: stderr >> Loading weights file from: C:\Users\desja\Documents\Python_programs\chess_study\engines\leela_chess\maia weights\m1100.pb
+2025-07-06 13:17:45,453 - SpawnPoolWorker-4 - WARNING - <UciProtocol (pid=8748)>: stderr >> |   _ | |
+2025-07-06 13:17:45,455 - SpawnPoolWorker-4 - WARNING - <UciProtocol (pid=8748)>: stderr >> |_ |_ |_| v0.31.2 built Oct 20 2024
+2025-07-06 13:17:45,457 - SpawnPoolWorker-3 - WARNING - <UciProtocol (pid=17836)>: stderr >> Creating backend [onnx-cpu]...
+2025-07-06 13:17:45,475 - SpawnPoolWorker-4 - WARNING - <UciProtocol (pid=8748)>: stderr >> Loading weights file from: C:\Users\desja\Documents\Python_programs\chess_study\engines\leela_chess\maia weights\m1200.pb
+2025-07-06 13:17:45,483 - SpawnPoolWorker-4 - WARNING - <UciProtocol (pid=8748)>: stderr >> Creating backend [onnx-cpu]...
+2025-07-06 13:19:58,414 - SpawnPoolWorker-4 - WARNING - <UciProtocol (pid=17972)>: stderr >>        _
+2025-07-06 13:19:58,424 - SpawnPoolWorker-4 - WARNING - <UciProtocol (pid=17972)>: stderr >> |   _ | |
+2025-07-06 13:19:58,426 - SpawnPoolWorker-4 - WARNING - <UciProtocol (pid=17972)>: stderr >> |_ |_ |_| v0.31.2 built Oct 20 2024
+2025-07-06 13:19:58,445 - SpawnPoolWorker-4 - WARNING - <UciProtocol (pid=17972)>: stderr >> Loading weights file from: C:\Users\desja\Documents\Python_programs\chess_study\engines\leela_chess\maia weights\m1300.pb
+2025-07-06 13:19:58,456 - SpawnPoolWorker-4 - WARNING - <UciProtocol (pid=17972)>: stderr >> Creating backend [onnx-cpu]...
+2025-07-06 13:20:02,916 - SpawnPoolWorker-3 - WARNING - <UciProtocol (pid=9480)>: stderr >>        _
+2025-07-06 13:20:02,916 - SpawnPoolWorker-3 - WARNING - <UciProtocol (pid=9480)>: stderr >> |   _ | |
+2025-07-06 13:20:02,918 - SpawnPoolWorker-3 - WARNING - <UciProtocol (pid=9480)>: stderr >> |_ |_ |_| v0.31.2 built Oct 20 2024
+2025-07-06 13:20:02,931 - SpawnPoolWorker-3 - WARNING - <UciProtocol (pid=9480)>: stderr >> Loading weights file from: C:\Users\desja\Documents\Python_programs\chess_study\engines\leela_chess\maia weights\m1500.pb
+2025-07-06 13:20:02,936 - SpawnPoolWorker-3 - WARNING - <UciProtocol (pid=9480)>: stderr >> Creating backend [onnx-cpu]...
+2025-07-06 13:22:31,426 - SpawnPoolWorker-3 - WARNING - <UciProtocol (pid=17264)>: stderr >>        _
+2025-07-06 13:22:31,432 - SpawnPoolWorker-3 - WARNING - <UciProtocol (pid=17264)>: stderr >> |   _ | |
+2025-07-06 13:22:31,446 - SpawnPoolWorker-3 - WARNING - <UciProtocol (pid=17264)>: stderr >> |_ |_ |_| v0.31.2 built Oct 20 2024
+2025-07-06 13:22:31,464 - SpawnPoolWorker-3 - WARNING - <UciProtocol (pid=17264)>: stderr >> Loading weights file from: C:\Users\desja\Documents\Python_programs\chess_study\engines\leela_chess\maia weights\m1600.pb
+2025-07-06 13:22:31,481 - SpawnPoolWorker-3 - WARNING - <UciProtocol (pid=17264)>: stderr >> Creating backend [onnx-cpu]...
+2025-07-06 13:22:53,140 - MainProcess - INFO - Loaded 1 oracle engine(s) and 28 model-building engines.
+2025-07-06 13:22:58,327 - MainProcess - INFO - Loaded session from C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-06 13:22:58,329 - MainProcess - INFO - Found 84 games remaining to analyze for player Desjardins373.
+2025-07-06 13:22:58,331 - MainProcess - INFO - --- Starting Analysis for Game 1: sananabdulla10 vs. Desjardins373 ---
+2025-07-06 13:22:58,331 - MainProcess - INFO - Loading pre-calculated ground truth template from session file.
+2025-07-06 13:22:58,331 - MainProcess - INFO - Selected all 25 available engines plus 3 required engines.
+2025-07-06 13:22:58,331 - MainProcess - INFO - Selected a sparse set of 15 engines for analysis, including 3 required engines.
+2025-07-06 13:22:58,331 - MainProcess - INFO - --- Running Checkpoint: Depth First Strategy ---
+2025-07-06 13:22:58,331 - MainProcess - INFO - Running engine simulations with params: depth_first...
+2025-07-06 13:22:58,331 - MainProcess - INFO - --- (1/15) Analyzing with maia_1100 ---
+2025-07-06 13:23:02,429 - SpawnPoolWorker-2 - WARNING - <UciProtocol (pid=18428)>: stderr >>        _
+2025-07-06 13:23:02,431 - SpawnPoolWorker-2 - WARNING - <UciProtocol (pid=18428)>: stderr >> |   _ | |
+2025-07-06 13:23:02,431 - SpawnPoolWorker-2 - WARNING - <UciProtocol (pid=18428)>: stderr >> |_ |_ |_| v0.31.2 built Oct 20 2024
+2025-07-06 13:23:02,442 - SpawnPoolWorker-1 - WARNING - <UciProtocol (pid=14772)>: stderr >>        _
+2025-07-06 13:23:02,444 - SpawnPoolWorker-2 - WARNING - <UciProtocol (pid=18428)>: stderr >> Loading weights file from: C:\Users\desja\Documents\Python_programs\chess_study\engines\leela_chess\maia weights\m1100.pb
+2025-07-06 13:23:02,446 - SpawnPoolWorker-1 - WARNING - <UciProtocol (pid=14772)>: stderr >> |   _ | |
+2025-07-06 13:23:02,452 - SpawnPoolWorker-2 - WARNING - <UciProtocol (pid=18428)>: stderr >> Creating backend [onnx-cpu]...
+2025-07-06 13:23:02,454 - SpawnPoolWorker-1 - WARNING - <UciProtocol (pid=14772)>: stderr >> |_ |_ |_| v0.31.2 built Oct 20 2024
+2025-07-06 13:23:02,488 - SpawnPoolWorker-1 - WARNING - <UciProtocol (pid=14772)>: stderr >> Loading weights file from: C:\Users\desja\Documents\Python_programs\chess_study\engines\leela_chess\maia weights\m1100.pb
+2025-07-06 13:23:02,492 - SpawnPoolWorker-1 - WARNING - <UciProtocol (pid=14772)>: stderr >> Creating backend [onnx-cpu]...
+2025-07-06 13:24:34,990 - SpawnPoolWorker-1 - WARNING - <UciProtocol (pid=18016)>: stderr >>        _
+2025-07-06 13:24:34,996 - SpawnPoolWorker-1 - WARNING - <UciProtocol (pid=18016)>: stderr >> |   _ | |
+2025-07-06 13:24:35,003 - SpawnPoolWorker-1 - WARNING - <UciProtocol (pid=18016)>: stderr >> |_ |_ |_| v0.31.2 built Oct 20 2024
+2025-07-06 13:24:35,012 - SpawnPoolWorker-1 - WARNING - <UciProtocol (pid=18016)>: stderr >> Loading weights file from: C:\Users\desja\Documents\Python_programs\chess_study\engines\leela_chess\maia weights\m1100.pb
+2025-07-06 13:24:35,031 - SpawnPoolWorker-1 - WARNING - <UciProtocol (pid=18016)>: stderr >> Creating backend [onnx-cpu]...
+2025-07-06 13:25:28,088 - SpawnPoolWorker-2 - WARNING - <UciProtocol (pid=18520)>: stderr >>        _
+2025-07-06 13:25:28,088 - SpawnPoolWorker-2 - WARNING - <UciProtocol (pid=18520)>: stderr >> |   _ | |
+2025-07-06 13:25:28,089 - SpawnPoolWorker-2 - WARNING - <UciProtocol (pid=18520)>: stderr >> |_ |_ |_| v0.31.2 built Oct 20 2024
+2025-07-06 13:25:28,514 - SpawnPoolWorker-2 - WARNING - <UciProtocol (pid=18520)>: stderr >> Loading weights file from: C:\Users\desja\Documents\Python_programs\chess_study\engines\leela_chess\maia weights\m1100.pb
+2025-07-06 13:25:28,596 - SpawnPoolWorker-2 - WARNING - <UciProtocol (pid=18520)>: stderr >> Creating backend [onnx-cpu]...
+2025-07-06 13:26:18,045 - MainProcess - INFO - Loaded 1 oracle engine(s) and 28 model-building engines.
+2025-07-06 13:26:22,882 - MainProcess - INFO - Loaded session from C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-06 13:26:22,882 - MainProcess - INFO - Found 84 games remaining to analyze for player Desjardins373.
+2025-07-06 13:26:22,886 - MainProcess - INFO - --- Starting Analysis for Game 1: sananabdulla10 vs. Desjardins373 ---
+2025-07-06 13:26:22,888 - MainProcess - INFO - Loading pre-calculated ground truth template from session file.
+2025-07-06 13:26:22,889 - MainProcess - INFO - Selected all 25 available engines plus 3 required engines.
+2025-07-06 13:26:22,889 - MainProcess - INFO - Selected a sparse set of 15 engines for analysis, including 3 required engines.
+2025-07-06 13:26:22,889 - MainProcess - INFO - --- Running Checkpoint: Depth First Strategy ---
+2025-07-06 13:26:22,889 - MainProcess - INFO - Running engine simulations with params: depth_first...
+2025-07-06 13:26:22,889 - MainProcess - INFO - --- (1/15) Analyzing with maia_1100 ---
+2025-07-06 13:43:11,991 - MainProcess - INFO - --- (2/15) Analyzing with maia_1200 ---
+2025-07-06 13:51:01,081 - MainProcess - INFO - Loaded 1 oracle engine(s) and 28 model-building engines.
+2025-07-06 13:51:13,257 - MainProcess - INFO - Loaded session from C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-06 13:51:13,257 - MainProcess - INFO - Found 84 games remaining to analyze for player Desjardins373.
+2025-07-06 13:51:13,261 - MainProcess - INFO - --- Starting Analysis for Game 1: sananabdulla10 vs. Desjardins373 ---
+2025-07-06 13:51:13,261 - MainProcess - INFO - Loading pre-calculated ground truth template from session file.
+2025-07-06 13:51:13,261 - MainProcess - INFO - --- (1/15) Analyzing with maia_1100 (depth_first) ---
+2025-07-06 14:08:03,431 - MainProcess - INFO - --- (2/15) Analyzing with maia_1200 (depth_first) ---
+2025-07-06 14:16:19,024 - MainProcess - INFO - Loaded 1 oracle engine(s) and 28 model-building engines.
+2025-07-06 14:16:26,475 - MainProcess - INFO - Loaded session from C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-06 14:16:26,475 - MainProcess - INFO - Found 84 games remaining to analyze for player Desjardins373.
+2025-07-06 14:16:26,475 - MainProcess - INFO - --- Starting Analysis for Game 1: sananabdulla10 vs. Desjardins373 ---
+2025-07-06 14:16:26,475 - MainProcess - INFO - Loading pre-calculated ground truth template from session file.
+2025-07-06 14:16:26,475 - MainProcess - INFO - --- (1/15) Analyzing with maia_1100 (depth_first) ---
+2025-07-06 14:33:20,162 - MainProcess - INFO - --- (2/15) Analyzing with maia_1200 (depth_first) ---
+2025-07-06 14:50:24,682 - MainProcess - INFO - --- (3/15) Analyzing with maia_1300 (depth_first) ---
+2025-07-06 15:07:31,179 - MainProcess - INFO - --- (4/15) Analyzing with maia_1500 (depth_first) ---
+2025-07-06 15:23:54,417 - MainProcess - INFO - --- (5/15) Analyzing with maia_1600 (depth_first) ---
+2025-07-06 15:40:01,495 - MainProcess - INFO - --- (6/15) Analyzing with maia_1800 (depth_first) ---
+2025-07-06 15:53:47,431 - MainProcess - INFO - Loaded 1 oracle engine(s) and 28 model-building engines.
+2025-07-06 15:53:56,472 - MainProcess - INFO - Loaded session from C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-06 15:53:56,472 - MainProcess - INFO - Found 84 games remaining to analyze for player Desjardins373.
+2025-07-06 15:53:56,472 - MainProcess - INFO - --- Starting Analysis for Game 1: sananabdulla10 vs. Desjardins373 ---
+2025-07-06 15:53:56,472 - MainProcess - INFO - Loading pre-calculated ground truth template from session file.
+2025-07-06 15:53:56,479 - MainProcess - INFO - --- (1/15) Analyzing with maia_1100 (depth_first) ---
+2025-07-06 16:00:47,373 - MainProcess - INFO - Loaded 1 oracle engine(s) and 28 model-building engines.
+2025-07-06 16:01:01,057 - MainProcess - INFO - Loaded session from C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-06 16:01:01,057 - MainProcess - INFO - Found 84 games remaining to analyze for player Desjardins373.
+2025-07-06 16:01:01,062 - MainProcess - INFO - --- Starting Analysis for Game 1: sananabdulla10 vs. Desjardins373 ---
+2025-07-06 16:01:01,064 - MainProcess - INFO - Loading pre-calculated ground truth template from session file.
+2025-07-06 16:01:01,065 - MainProcess - INFO - --- (1/15) Analyzing with maia_1100 (depth_first) ---
+2025-07-06 16:18:09,561 - MainProcess - INFO - Progress saved to session file after completing maia_1100.
+2025-07-06 16:18:09,563 - MainProcess - INFO - --- (2/15) Analyzing with maia_1200 (depth_first) ---
+2025-07-06 16:35:43,433 - MainProcess - INFO - Progress saved to session file after completing maia_1200.
+2025-07-06 16:35:43,433 - MainProcess - INFO - --- (3/15) Analyzing with maia_1300 (depth_first) ---
+2025-07-06 16:53:04,897 - MainProcess - INFO - Progress saved to session file after completing maia_1300.
+2025-07-06 16:53:05,015 - MainProcess - INFO - --- (4/15) Analyzing with maia_1500 (depth_first) ---

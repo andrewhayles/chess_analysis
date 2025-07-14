@@ -1,0 +1,218 @@
++---------------------+
+| 08/02/2012 : v2.2.1 |
++---------------------+
+- fixed the ponder mode bug 
+- fixed the time bug 
+- x32 version works again 
+- corrected a PST that mistakenly wasn't identical for both sides 
+- a few tweaks here and there 
+- Prédateur doesn't stop searching when it finds a mate anymore. That way it keeps searching while it still has time and maybe find a shorter one. 
+- made all uci options lowercase (does CuteChess still protest?)
+
++---------------------+
+| 04/01/2012 : v2.2   |
++---------------------+
+- A lot of speedup everywhere, made possible by using Intruments,
+  XCode's code profiling tool.
+- The promotion "bug" is fixed, so Olivier and Leo should be happy, now ;)
+- Many ply-variables have been gathered into fieldbits, speeding up
+  many parts of the engine.
+- the search have been polished and finely tuned.
+- Prédateur now understands the "go nodes xx" command.
+- Time management and response improved (Prédateur can now play
+  games will less than 200ms per move).
+- perft is now available to everyone.
+- More binaries in the archive: MorphOS PPC added.
+- Many tidbits here and there I don't even remember.
+
++---------------------+
+| 18/05/2011 : v2.1   |
++---------------------+
+- Prédateur élage maintenant beaucoup moins, mais mieux, l'arbre de
+  recherche
+- correction de l'utilisation excessive de mémoire par les tables de
+  transposition
+- diminution de l'utilisation de mémoire, d'une manière générale
+- accélération du générateur de coups, en particulier de la routine
+  de test d'échecs
+- quelques modifications de la fonction d'évaluation. Prédateur
+  devrait désormais viser votre roi plus hostensiblement...
+- quelques corrections de bugs
+
++---------------------+
+| 24/12/2010 : v2.0   |
++---------------------+
+- Ajout du mode Réflexion permanente (ponder)
+- Internal Iterative Deepening
+- Elagage "Distance to mate"
+- Late Move Pruning
+- drapeau "éviter null-move" dans la table de transposition
+- pawn-hash
+- Remplacement du Null-Move vérifié par un null-move non vérifié
+- Suppression des recapture et pawnpush extensions
+- Le LMR fonctionne désormais correctement
+- Séparation de la recherche entre une fonction pour la racine et une
+  fonction pour les branches
+- Prédateur est (beaucoup) moins bavard
+- meilleure gestion du temps
+- Prédateur a maintenant une connaissance (de base) des pions arriérés et
+  des pions passés
+- quantité de bugs corrigés (en particulier dans la gestion de la
+  table de transposition)
+
+
+
++---------------------+
+| 07/07/2008 : v0.1.5 |
++---------------------+
+Nouvelles Fonctions :
+ - Verified Null-Move (testé et validé)
+ - Threat Extension
+ - Check Extension
+ - Singular Reply Extension
+ - Recapture Extension
+ - Pawn Push Extension
+ - Late Move Reduction (Thanks Dany!)
+ - Futility PRuning
+ - Extended Futility Pruning
+ - Commande uci "go movetime xxxx", permettant d'utiliser Prédateur
+   aux cadences "x secondes par coup"
+ - Commande uci "go depth x", permettant d'utiliser Prédateur aux
+   cadences de type "chercher jusqu'à une profondeur de x demi-coups"
+Modifications :
+ - Légère modification de la fonction d'évaluation.
+Bugs corrigés :
+ - Enorme bug qui faisait jouer à Prédateur son dernier coup analysé
+   à la fin du temps au lieu du meilleur coup trouvé (ce qui
+   équivalait en pratique à jouer des coups au hasard).
+ - Gros bug dans la table de transposition : Prédateur ne prenait pas
+   en compte le camp au trait lorsqu'il lisait/stockait une position.
+ - Bug mineur dans le Null-Move.
+ - Divers petits autres bugs non listés.
+
++------------------------+
+| 25/06/2008 : v0.1.4 r2 |
++------------------------+
+- added a special time manager to handle 1) games with no time increment
+  2) grumpy testers, and reduced the total default hash size to 64MB.
+- fixed an horrible bug in the checkmate handling.
+- a first try with null-move (verified null-move).
+- total hash default size reduced to 64Mb (48 main + 16 quiesce)
+
++---------------------+
+| 21/06/2008 : v0.1.4 |
++---------------------+
+Nouvelles Fonctions :
+ - On peut maintenant reprendre ses coups (takeback)
+ - Prédateur interroge la console pendant sa recherche et réagit
+   désormais aux commandes "stop" et "quit"
+ - Support des chaînes FEN (seulement pour les positions légales)
+   (Predateur peut donc être un outil d'analyse)
+ - Ajout de l'option uci Main_Hash, qui permet de changer la taille
+   de la table de transposition principale, et de l'option uci
+   Quiesce_Hash qui en fait de même pour la table de la recherche
+   quiescente
+ - Extension de recherche pour les coups forcés
+   (Permet à Prédateur de trouver les mats forcés plus lointains)
+ - Algorithme permettant à prédateur de mater le roi adverse nu
+   (Si il a le matériel pour)
+ - ajout des routines de test perft : Prédateur passe maintenant ce
+   test avec succès (commande : "perft x", x étant la profondeur)
+Modifications :
+ - Retour de la table de transposition de la recherche quiescente
+   (Apporte un léger gain)
+ - Fontion d'évaluation retouchée et accélérée
+   -> Pénalité des pions isolés
+   -> Tours sur colonnes (semi-)ouvertes
+   -> Tables de notations de placement des pièces
+   -> Incitation à developper ses pièces mineures lors de l'ouverture
+ - Réécriture des tests d'échecs et d'une partie du générateur de coups.
+   Résultat : >+100% de nps par rapport à la v0.1.3b2!
+ - Listes de coups maintenant triées par quicksort et non tri à bulle.
+   (+15% nps!)
+ - Amélioration de l'ordonnancement de coups
+   (Prédateur joue maintenant 1,1 coups sur 30 environ!)
+ - Modification de la gestion du temps
+Bugs corrigés :
+ - Ultime (?) débogage du bug de mat
+ - bogues retirés de la routine de restauration de position
+   (les drapeaux de roques pouvaient être faussés lors du parcours de l'arbre)
+ - correction d'un autre gros bogue de la routine de restauration :
+   Non initialisée à zéro, elle faisait faire à Prédateur une quantité
+   énorme de travail inutile.
+ - perft a permis de trouver certains bugs :
+   -> le test d'échecs ne prenait en compte que les cavaliers originaux,
+      tandis que les pions promus en cavalier étaient ignorés - corrigé
+   -> prise en passant défectueuse - corrigé
+
++-----------------------+
+| xx/03/2008 : v0.1.3bx |
++-----------------------+
+- Correction du bug de mat. Predateur mate maintenant parfaitement.
+- N'affiche la variante principale que si elle comporte plus d'un coup.
+- fonction d'évaluation profondément modifiée
+- table de transposition supprimée pour la recherche quiescente
+- nombreuses modifications pour accélérer la recherche.
+- Meilleur ordonnancement des coups pour rendre l'alpha-beta plus efficace.
+
++---------------------+
+| 29/08/2007 : v0.1.2 |
++---------------------+
+- Implémentation des tables de transpositions.
+- Nombreuses accélérations :
+  -> Routine de sauvegarde de données
+  -> Pions doublés (fonction d'évaluation)
+  -> Avancée de pions en finale
+  -> Activité des pièces
+
++---------------------+
+| 25/08/2007 : v0.1.1 |
++---------------------+
+- Forte amélioration de l'élagage Alpha-Beta (il y avait en plus un petit bug).
+- Les captures et promotions sont maintenant générées à part (Plus rapide).
+- Nouvelles heuristiques :
+  -> mobilité des pièces mineures,
+  -> Sécurité du roi,
+  -> Nulles par insuffisance de matériel.
+- Contempt factor (mis à -25).
+- Nombreuses améliorations pour augmenter la vitesse de parcours de l'arbre.
+- Corrections de bugs :
+  -> Détection du mat dans la recherche quiescente.
+  -> Prise en compte des promotions dans la recherche quiescente.
+- Nouveau logo... qui fait peur! ;o)
+- Prédateur est quasiment 3,5 fois plus rapide que sa version précédente, ce qui lui permet souvent de descendre un ply plus loin dans sa recherche.
+- Première (et magistrale!) victoire de Prédateur contre TSCP1.81!!!
+
++---------------------+
+| 23/08/2007 : v0.1.0 |
++---------------------+
+Après beaucoup de travail, grosse révision qui justifie de passer en version 0.1. Entre autres :
+- Implémentation, à base de clés de Zobrist, de la détection de répétition de position. Le jeu de règles est donc complet.
+- Gestion du temps : Prédateur s'adapte à tous les rythmes, avec ou sans incrément, et ne devrait jamais perdre au temps.
+- Introduction d'heuristiques dans la fonction d'évaluation : pions doublés et incitation à pousser ses pions quand le matériel s'amenuise.
+- Correction de nombreux bugs. En particulier :
+  -> gestion de la balance,
+  -> Récupération de la chaîne de la variante principale,
+  -> mise à jour de la valeur du pion promu.
+
++---------------------+
+| 19/08/2007 : v0.0.4 |
++---------------------+
+Approfondissement itératif et fenêtre d'aspiration. COrrection du bug de détection de mat : prédateur mate maintenant parfaitement. Ajout d'informations à la chaîne d'informations. Celle-ci ne donne aussi sa variante principale que si elle a changé depuis la dernière transmission d'informations.
+
++---------------------+
+| 17/08/2007 : v0.0.3 |
++---------------------+
+AlphaBeta avec recherche quiescente, coup tueur et variante principale.
+Joue déja pas mal tactiquement. Profondeur fixée à trois coups, avec recherche quiescente illimitée en profondeur mais seulement sur les captures de pièces supérieures ou égales et d'au moins 200 centipions.
+
++---------------------+
+| 14/08/2007 : v0.0.2 |
++---------------------+
+Générateur de coups refait et indépendant de la fonction de recherche.
+Testé avec 300 parties contre lui-même sous Arena et pas un seul coup illégal ni plantage. Beaucoup plus rapide également (800Kn générés sur un P4@2.8GHz).
+
++---------------------+
+| 12/08/2007 : v0.0.1 |
++---------------------+
+Premier moteur entièrement fonctionnel. Toutes les règles sont implémentées sauf la nulle par triple répétition de position. Joue des coups au hasard. 200 parties tests contre lui-même sous Arena et pas un seul coup illégal ni plantage.

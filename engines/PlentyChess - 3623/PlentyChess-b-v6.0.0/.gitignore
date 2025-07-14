@@ -1,0 +1,13 @@
+src/*.o
+engine
+engine.exe
+PlentyChess*
+*.out
+perf*
+stuff/
+tools/*.o
+tools/process_net
+*.bin
+datagen_scrape/
+.vscode
+src/fathom/src/*.o

@@ -1,0 +1,19 @@
+# error: 0.077884420359403933 (27.907780%), took: 1017.427000s
+tune_bishop_count=43
+tune_too_many_pawns=15
+tune_zero_pawns=-3
+tune_isolated_pawns=-16
+tune_rook_on_open_file=24
+tune_double_pawns=10
+tune_bishop_open_diagonal=271
+tune_pawn=91
+tune_knight=391
+tune_bishop=392
+tune_rook=640
+tune_queen=1274
+tune_king_shield=5
+tune_psq_mul=-418
+tune_psq_div=-538
+tune_king_knight_distance=4
+tune_king_RQ_distance=1
+#---

@@ -1,0 +1,118 @@
+┌──────────┬────────────────────────┬─────────────────────────────────────┬──────────────────────────────────────────────┐
+│ Network  │         Params         │                SPRT                 │                    Notes                     │
+├──────────┼────────────────────────┼─────────────────────────────────────┼──────────────────────────────────────────────┤
+│ carp0000 │ 100M d8 self-play fens │           518.2 +/- 208.1           │ First unique network! Completely curshes HCE │
+│          │ 256 hidden nodes       │                                     │ SPRT took ~80 games just because it wouldn't │
+│  (v2.0)  │ lr=1e-2    wdl=0.1     │                                     │ lose                                         │
+│          │ 80 epoch, drop at 30   │                                     │                                              │
+├──────────┼────────────────────────┼─────────────────────────────────────┼──────────────────────────────────────────────┤
+│ carp0001 │ 100M d8 self-play fens │     -9.2 (lost full output)         │ Testing 384-node hidden layers               │
+│          │ 384 hidden nodes       │                                     │ Data is probably not enough, maybe tweak     │
+│          │ lr=1e-2    wdl=0.1     │                                     │ params                                       │
+│          │ 80 epoch, drop at 30   │                                     │                                              │
+├──────────┼────────────────────────┼─────────────────────────────────────┼──────────────────────────────────────────────┤
+│ carp0002 │ 230M d8 self-play fens │            10.0 +/- 8.0             │ Added a lot more data with the same params   │
+│          │ 256 hidden nodes       │              vs 0000                │                                              │
+│          │ lr=1e-2    wdl=0.1     │                                     │                                              │
+│          │ 80 epoch, drop at 30   │                                     │                                              │
+├──────────┼────────────────────────┼─────────────────────────────────────┼──────────────────────────────────────────────┤
+│ carp0003 │ Same as 0002, but with │            22.5 +/- 15.1            │ Seems that with more data, the extra hidden  │
+│          │ 384 hidden nodes       │              vs 0002                │ nodes can stretch their legs                 │
+│          │                        │                                     │                                              │
+│          │                        │                                     │                                              │
+├──────────┼────────────────────────┼─────────────────────────────────────┼──────────────────────────────────────────────┤
+│ carp0004 │ 230M d8 self-play fens │             7.38 +- 5.43            │ Training with Cosmo's hyperparams            │
+│          │ 384 hidden nodes       │               vs 0003               │ More wdl focus, less lr and less epochs      │
+│          │ lr=1e-3    wdl=0.3     │                                     │                                              │
+│          │ 65 epoch, drop at 30   │                                     │                                              │
+├──────────┼────────────────────────┼─────────────────────────────────────┼──────────────────────────────────────────────┤
+│ carp0005 │ 230M d8 self-play fens │           -13.53 +- 9.55            │ Not enough data for 512 nodes yeat           │
+│          │ 512 hidden nodes       │               vs 0004               │                                              │
+│          │ lr=1e-3    wdl=0.3     │                                     │                                              │
+│          │ 65 epoch, drop at 30   │                                     │                                              │
+├──────────┼────────────────────────┼─────────────────────────────────────┼──────────────────────────────────────────────┤
+│ carp0006 │ 460M d8 self-play fens │             8.80 +- 6.12            │ Added 230M fresh positions with same params  │
+│          │ 384 hidden nodes       │               vs 0005               │ as net0004                                   │
+│          │ lr=1e-3    wdl=0.3     │                                     │                                              │
+│          │ 65 epoch, drop at 30   │                                     │                                              │
+├──────────┼────────────────────────┼─────────────────────────────────────┼──────────────────────────────────────────────┤
+│ carp0007 │ 370M d8 self-play fens │           -12.99 +- 9.08            │ Trying to remove the first batch of ~90M     │
+│          │ 384 hidden nodes       │               vs 0006               │ since I am not able to deduplicate them.     │
+│          │ lr=1e-3    wdl=0.3     │                                     │                                              │
+│          │ 65 epoch, drop at 30   │                                     │                                              │
+├──────────┼────────────────────────┼─────────────────────────────────────┼──────────────────────────────────────────────┤
+│ carp0008 │ 670M d8 self-play fens │           -19.29 +- 10.60           │ More data + moved to AdamW                   │
+│          │ 384 hidden nodes       │               vs 0006               │ Turns out overfitting is a thing             │
+│          │ lr=1e-3    wdl=0.3     │                                     │                                              │
+│          │ 65 epoch, drop at 30   │                                     │                                              │
+├──────────┼────────────────────────┼─────────────────────────────────────┼──────────────────────────────────────────────┤
+│ carp0009 │ 670M d8 self-play fens │            12.84 +- 7.45            │ Same as 0008 but with extra hidden nodes     │
+│          │ 512 hidden nodes       │               vs 0006               │ Hopefully now's a big enough dataset for 512 │
+│          │ lr=1e-3    wdl=0.3     │                                     │                                              │
+│          │ 65 epoch, drop at 30   │                                     │                                              │
+├──────────┼────────────────────────┼─────────────────────────────────────┼──────────────────────────────────────────────┤
+│ carp0010 │ 670M d8 self-play fens │             4.71 +- 3.73            │ Trying SquaredReLu activation                │
+│          │ 512 hidden nodes       │               vs 0009               │                                              │
+│          │ lr=1e-3    wdl=0.3     │                                     │                                              │
+│          │ 65 epoch, drop at 30   │                                     │                                              │
+├──────────┼────────────────────────┼─────────────────────────────────────┼──────────────────────────────────────────────┤
+│ carp0011 │ 1.08B d8 self-play fens│            13.98 +- 7.83            │ Completely fresh training data. Training     │
+│          │ 512 hidden nodes       │               vs 0010               │ crashed before 65 epochs                     │
+│          │ lr=1e-3    wdl=0.3     │                                     │                                              │
+│          │ 60 epoch, drop at 30   │                                     │                                              │
+├──────────┼────────────────────────┼─────────────────────────────────────┼──────────────────────────────────────────────┤
+│ carp0012 │ 1.08B d8 self-play fens│             2.21 +- 2.39            │ Same as carp0011, but resumed training for   │
+│          │ 512 hidden nodes       │               vs 0011               │ final 5 epochs.                              │
+│          │ lr=1e-3    wdl=0.3     │                                     │                                              │
+│          │ 65 epoch, drop at 30   │                                     │                                              │
+├──────────┼────────────────────────┼─────────────────────────────────────┼──────────────────────────────────────────────┤
+│ carp0013 │ 1.08B d8 self-play fens│            6.94 +- 4.97             │ Carp0012 at earlier epoch. 512 nodes is most │
+│          │ 512 hidden nodes       │               vs 0012               │ likely overfitting at this point             │
+│          │ lr=1e-3    wdl=0.3     │           29.21 +- 12.00            │                                              │
+│          │ 45 epoch, drop at 30   │               vs 0010               │                                              │
+├──────────┼────────────────────────┼─────────────────────────────────────┼──────────────────────────────────────────────┤
+│ carp0014 │ 1.08B d8 self-play fens│           -5.65 +- 6.11             │ Testing with more nodes. Still overfitting   │
+│          │ 768 hidden nodes       │               vs 0013               │ Loss just sticks to ~0.0066                  │
+│          │ lr=1e-3    wdl=0.3     │                                     │                                              │
+│          │ 45 epoch, drop at 30   │                                     │                                              │
+├──────────┼────────────────────────┼─────────────────────────────────────┼──────────────────────────────────────────────┤
+│ carp0015 │ 1.08B d8 self-play fens│          -10.29 +- 7.86             │ Same as carp0014 but with custom lr schedule │
+│          │ 768 hidden nodes       │               vs 0013               │ in Marlinflow, starting at 0.01 and scaling  │
+│          │ lr=1e-2    wdl=0.3     │                                     │ by 0.3 every 10 epochs.                      │
+│          │ 40 epoch, .3x/10 epoch │                                     │ Bench is scary high                          │
+├──────────┼────────────────────────┼─────────────────────────────────────┼──────────────────────────────────────────────┤
+│ carp0016 │ 1.68B d8 self-play fens│           44.29 +- 14.26            │ Properly interleaved all data. Also uses the │
+│          │ 768 hidden nodes       │       epoch40 vs 0013               │ full dataset bar the first 60M positions.    │
+│          │ lr=1e-3    wdl=0.4     │            1.39 +- 2.11             │ Uses the custom LR scheduler and higher WDL  │
+│          │ 50 epoch, .3x/10 epoch │       epoch50 vs epoch40            │                                              │
+├──────────┼────────────────────────┼─────────────────────────────────────┼──────────────────────────────────────────────┤
+│ carp0017 │ 1.68B d8 self-play fens│          -26.36 +- 11.52            │ Try higher WDL and less LR                   │
+│          │ 768 hidden nodes       │               vs 0016               │                                              │
+│          │ lr=1e-2    wdl=0.5     │                                     │                                              │
+│          │ 50 epoch, .3x/10 epoch │                                     │                                              │
+├──────────┼────────────────────────┼─────────────────────────────────────┼──────────────────────────────────────────────┤
+│ carp0018 │ 3.26B self-play fens   │          -15.54 +- 10.49            │ Add more data, using 5k nodes and depth 9.   │
+│          │ 1024 hidden nodes      │               vs 0016               │ Trained for 10 epochs, followed by drops     │
+│          │ lr=1e-3    wdl=0.5     │                                     │ every 5 since then.                          │
+│          │ 30 epoch, .3x/5 epoch  │                                     │                                              │
+├──────────┼────────────────────────┼─────────────────────────────────────┼──────────────────────────────────────────────┤
+│ carp0019 │ 3.26B self-play fens   │           15.74 +- 8.39             │ Remove 600M old fens, use 1.59B 5k nodes and │
+│          │ 1024 hidden nodes      │               vs 0016               │ 591M d9 fresh fens. First Bullet net!        │
+│  (CURR)  │ lr=1e-3    wdl=0.5     │                                     │                                              │
+│          │ 20 epoch, .1x/5 epoch  │                                     │                                              │
+├──────────┼────────────────────────┼─────────────────────────────────────┼──────────────────────────────────────────────┤
+│ carp0020 │ 3.26B self-play fens   │         -18.94 +- 11.21             │ Try a bigger hidden layer. Honestly don't    │
+│          │ 1536 hidden nodes      │               vs 0016               │ know what went wrong.                        │
+│          │ lr=1e-3    wdl=0.4     │                                     │                                              │
+│          │ 20 epoch, .1x/5 epoch  │                                     │                                              │
+├──────────┼────────────────────────┼─────────────────────────────────────┼──────────────────────────────────────────────┤
+│ carp0021 │ 3.26B self-play fens   │         -116.93 +- 30.74            │ Experimenting with output buckets, though    │
+│          │ 1024 hidden nodes      │               vs 0020               │ something has gone terribly wrong.           │
+│          │ lr=1e-3    wdl=0.4     │                                     │                                              │
+│          │ 26 epoch, .1x/8 epoch  │                                     │                                              │
+├──────────┼────────────────────────┼─────────────────────────────────────┼──────────────────────────────────────────────┤
+│ carp0022 │                        │                                     │                                              │
+│          │                        │                                     │                                              │
+│          │                        │                                     │                                              │
+│          │                        │                                     │                                              │
+└──────────┴────────────────────────┴─────────────────────────────────────┴──────────────────────────────────────────────┘

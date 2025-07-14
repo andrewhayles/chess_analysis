@@ -1,0 +1,26 @@
+name: Build
+
+on:
+  push:
+    branches: [ "main", "dev" ]
+  pull_request:
+    branches: [ "main", "dev" ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Checkout Code
+      uses: actions/checkout@v3
+  
+    - name: Build for OpenBench
+      run: make
+
+    - name: Test
+      run: cargo test --verbose --release -p carp -p chess

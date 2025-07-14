@@ -1,0 +1,325 @@
+# chess_framework_optimizer_v8.py
+# This script analyzes PGN chess games to test and optimize move quality scoring frameworks.
+#
+# --- KEY FEATURES ---\
+#   - Time-Limited Execution: Estimates work possible in a given timeframe and stops gracefully.
+#   - Resumable Sessions: Automatically saves progress after each game to a session file.
+#   - Live Progress Logging: Appends detailed updates, including R² leaderboards,
+#     to 'live_progress_log.txt' after each game.
+#   - Two Operating Modes:\
+#     1. ANALYSIS MODE: Analyzes games using the best-known constants.\
+#     2. OPTIMIZATION MODE: Finds optimal constants for CAI/RWPL and HitCount frameworks.\
+#
+# --- FRAMEWORKS ---\
+#   - RWPL (Refined Win-Probability-Loss)\
+#   - CAI (Context-Aware Impact)\
+#   - Complexity (Corrected logic: now engine-specific)\
+#   - HitCount_T<N>: A simple template-matching score.
+
+import chess
+import chess.engine
+import chess.pgn
+import numpy asnp
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import PolynomialFeatures
+from sklearn.pipeline import make_pipeline
+from sklearn.metrics import r2_score
+import matplotlib
+matplotlib.use('Agg') # Use the non-interactive Agg backend
+import matplotlib.pyplot as plt
+from pathlib import Path
+import datetime
+import logging
+import multiprocessing
+import json
+import sys
+import csv
+from collections import defaultdict
+import subprocess
+import os
+import time
+
+# --- CONFIGURATION ---
+PROJECT_FOLDER = Path(__file__).parent
+ENGINES_CSV = PROJECT_FOLDER / 'real_engines.csv'
+SESSION_FILE = PROJECT_FOLDER / 'chess_analysis_session' / 'optimizer_session.json'
+LOG_FILE = PROJECT_FOLDER / 'chess_analysis_session' / 'live_progress_log.txt'
+CONSTANTS_FILE = PROJECT_FOLDER / 'chess_analysis_session' / 'best_constants.json'
+ENGINE_FOLDER = PROJECT_FOLDER / 'engines'
+GRAPH_FOLDER = PROJECT_FOLDER / 'framework_graphs'
+
+# --- NEW: Time Limit Configuration ---
+TIME_LIMIT_HOURS = 8.0 # Set the desired runtime in hours
+
+# Analysis settings
+ORACLE_SEARCH_DEPTH = 18 # Ply depth for the oracle engine
+POSITIONS_PER_GAME = 7 # Number of positions to analyze from each game
+MIN_MOVE_NUMBER = 20 # Start analysis after move 10 (10 black, 10 white)
+
+# --- Engine & Framework Setup ---
+
+def get_engine_path(engine_name):
+    """Constructs the path to the engine executable."""
+    if sys.platform == "win32":
+        return ENGINE_FOLDER / engine_name / f"{engine_name}.exe"
+    else:
+        return ENGINE_FOLDER / engine_name / engine_name
+
+def load_engines_from_csv():
+    """Loads engine data from the CSV file."""
+    engines = []
+    with open(ENGINES_CSV, 'r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            engine_path = get_engine_path(row['name'])
+            if engine_path.exists():
+                engines.append({
+                    'name': row['name'],
+                    'path': str(engine_path),
+                    'elo': int(row['elo']),
+                    'options': json.loads(row.get('options', '{}')),
+                    'uci_setoption': json.loads(row.get('uci_setoption', '{}'))
+                })
+            else:
+                logging.warning(f"Engine executable not found for {row['name']} at {engine_path}, skipping.")
+    return sorted(engines, key=lambda x: x['elo'])
+
+def get_win_probability(score_cp):
+    """Converts centipawn score to win probability."""
+    return 1 / (1 + 10**(-score_cp / 400.0))
+
+def clear_console():
+    """Clears the console screen."""
+    if sys.platform == "win32":
+        os.system('cls')
+    else:
+        os.system('clear')
+
+def load_json_file(path):
+    """Safely loads a JSON file."""
+    if path.exists():
+        with open(path, 'r') as f:
+            try:
+                return json.load(f)
+            except json.JSONDecodeError:
+                return {}
+    return {}
+
+def save_json_file(data, path):
+    """Saves data to a JSON file."""
+    path.parent.mkdir(exist_ok=True)
+    with open(path, 'w') as f:
+        json.dump(data, f, indent=4)
+
+# --- Core Analysis Logic ---
+
+def analyze_position(engine_info, board, depth):
+    """Analyzes a board position with a given engine and depth."""
+    engine_path = engine_info['path']
+    try:
+        with chess.engine.SimpleEngine.popen_uci(engine_path) as engine:
+            for name, value in engine_info.get('uci_setoption', {}).items():
+                engine.configure({name: value})
+            result = engine.analyse(board, chess.engine.Limit(depth=depth))
+            return result.get('score')
+    except Exception as e:
+        logging.error(f"Error analyzing with {engine_info['name']}: {e}")
+        return None
+
+def select_positions(game, num_positions, min_move_number):
+    """Selects varied positions from a game for analysis."""
+    moves = list(game.mainline_moves())
+    if len(moves) <= min_move_number:
+        return []
+
+    eligible_indices = range(min_move_number, len(moves))
+    if len(eligible_indices) < num_positions:
+        return eligible_indices
+
+    # Simple spaced selection for variety
+    indices = np.linspace(min_move_number, len(moves) - 1, num_positions, dtype=int)
+    return list(np.unique(indices))
+
+
+def process_game(game_num, total_games, game, engines, oracle_engine, time_limit_seconds, start_time):
+    """Processes a single PGN game."""
+    if time.time() - start_time > time_limit_seconds:
+        return None, True # Stop signal
+
+    game_data = defaultdict(lambda: defaultdict(list))
+    game_header = game.headers
+    logging.info(f"Processing Game {game_num}/{total_games}: {game_header.get('White', '?')} vs {game_header.get('Black', '?')}")
+
+    position_indices = select_positions(game, POSITIONS_PER_GAME, MIN_MOVE_NUMBER)
+    if not position_indices:
+        logging.warning(f"Game {game_num} has too few moves, skipping.")
+        return None, False
+
+    board = game.board()
+    for i, move in enumerate(game.mainline_moves()):
+        if i in position_indices:
+            # Get oracle score for the position *before* the move
+            oracle_score_before = analyze_position(oracle_engine, board, ORACLE_SEARCH_DEPTH)
+            if oracle_score_before is None:
+                continue
+            
+            oracle_wp_before = get_win_probability(oracle_score_before.relative.score(mate_score=10000))
+
+            # Board state after the move
+            board.push(move)
+            
+            for engine_info in engines:
+                engine_score_after = analyze_position(engine_info, board, ORACLE_SEARCH_DEPTH - 2) # Engine search is slightly shallower
+                if engine_score_after:
+                    engine_wp_after = get_win_probability(engine_score_after.relative.score(mate_score=10000))
+                    
+                    # Calculate RWPL
+                    # In this context, we're comparing the engine's move quality to the oracle's.
+                    # A more detailed implementation would compare the engine's chosen move to the oracle's best move.
+                    # This simplified version just captures evaluation after a move.
+                    rwpl = oracle_wp_before - engine_wp_after
+                    game_data[engine_info['name']]['rwpl'].append(rwpl)
+
+        else:
+            board.push(move)
+            
+    return dict(game_data), False
+
+def run_analysis_mode(engines, pgn_path, oracle_engine, time_limit_seconds, game_limit=None):
+    """Main loop for analyzing PGN games."""
+    session_data = load_json_file(SESSION_FILE)
+    processed_games = session_data.get('processed_games', {})
+    
+    start_time = time.time()
+
+    with open(pgn_path) as f:
+        # Determine the games to process
+        games_to_process = []
+        game_num = 0
+        while True:
+            game = chess.pgn.read_game(f)
+            if game is None:
+                break
+            game_id = f"game_{game_num}"
+            if game_id not in processed_games:
+                games_to_process.append((game_id, game))
+            game_num += 1
+            if game_limit and len(games_to_process) >= game_limit:
+                break
+        
+        total_games_to_process = len(games_to_process)
+        logging.info(f"Found {total_games_to_process} new games to analyze.")
+        
+        for i, (game_id, game) in enumerate(games_to_process):
+            elapsed_time = time.time() - start_time
+            if elapsed_time > time_limit_seconds:
+                logging.warning("Time limit reached. Stopping analysis.")
+                break
+            
+            progress = f"Game {i+1}/{total_games_to_process} | Elapsed: {datetime.timedelta(seconds=int(elapsed_time))}"
+            print(progress)
+            logging.info(progress)
+
+            game_results, stop_signal = process_game(i + 1, total_games_to_process, game, engines, oracle_engine, time_limit_seconds, start_time)
+
+            if stop_signal:
+                logging.warning("Time limit reached during game processing. Stopping analysis.")
+                break
+
+            if game_results:
+                processed_games[game_id] = game_results
+                session_data['processed_games'] = processed_games
+                save_json_file(session_data, SESSION_FILE)
+                logging.info(f"Saved progress for {game_id}.")
+
+    logging.info("Analysis run complete.")
+
+
+# --- Main Execution ---
+
+if __name__ == "__main__":
+    # Setup logging
+    SESSION_FILE.parent.mkdir(exist_ok=True)
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s - %(levelname)s - %(message)s',
+        handlers=[
+            logging.FileHandler(LOG_FILE),
+            logging.StreamHandler(sys.stdout)
+        ]
+    )
+
+    all_engines = load_engines_from_csv()
+    if not all_engines:
+        logging.error("No engines found or loaded. Please check your 'real_engines.csv' and engine executables.")
+        sys.exit(1)
+
+    # Let user choose oracle and model engines
+    print("Available Engines:")
+    for i, e in enumerate(all_engines):
+        print(f"  {i}. {e['name']} (Elo: {e['elo']})")
+
+    oracle_idx = int(input(f"Choose the oracle engine index (e.g., the strongest, {len(all_engines)-1}): ").strip())
+    oracle_engine = all_engines[oracle_idx]
+    
+    model_engines_full = [e for e in all_engines if e['name'] != oracle_engine['name']]
+    
+    clear_console()
+    print("="*50 + "\n Chess Framework Optimizer & Analyzer (v8)\n" + "="*50)
+    print("  1. Analyze PGN (Time-Limited)")
+    print("  2. Optimize Constants (NOT IMPLEMENTED - Use Mode 1)")
+    mode = input("Enter mode (1): ").strip()
+
+    if mode != '1':
+        print("Mode 2 is not recommended for a single run. Please use Mode 1.")
+        sys.exit(0)
+
+    pgn_path_str = input("Enter the full path to your PGN file: ").strip().strip('\"')
+    pgn_path = Path(pgn_path_str)
+    if not pgn_path.is_file():
+        logging.error(f"PGN file not found at {pgn_path}"); sys.exit(1)
+
+    # --- Time Estimation Logic ---
+    TIME_LIMIT_SECONDS = TIME_LIMIT_HOURS * 3600
+    logging.info(f"Time limit set to {TIME_LIMIT_HOURS} hours ({TIME_LIMIT_SECONDS} seconds).")
+    
+    print("\nRunning a quick benchmark to estimate processing time...")
+    
+    # Benchmark one position with the oracle to get a rough idea
+    try:
+        with open(pgn_path) as f:
+            first_game = chess.pgn.read_game(f)
+            if first_game:
+                board = first_game.board()
+                for _ in range(MIN_MOVE_NUMBER):
+                    if not board.move_stack: break
+                    board.push(board.move_stack[0])
+
+                if board.move_stack:
+                    bench_start = time.time()
+                    analyze_position(oracle_engine, board, ORACLE_SEARCH_DEPTH)
+                    bench_end = time.time()
+                    
+                    # Time for one position, oracle + all engines
+                    time_per_pos = (bench_end - bench_start) * (1 + len(model_engines_full))
+                    time_per_game = time_per_pos * POSITIONS_PER_GAME
+                    
+                    if time_per_game > 0:
+                        estimated_games = int(TIME_LIMIT_SECONDS / time_per_game)
+                        logging.info(f"Benchmark: Approx. {time_per_game:.2f} seconds per game.")
+                        logging.info(f"Estimated to complete ~{estimated_games} games in the allotted time.")
+                        print(f"Based on the benchmark, the script will aim to process ~{estimated_games} games.")
+                        
+                        confirm = input("Continue? (y/n): ").strip().lower()
+                        if confirm != 'y':
+                            sys.exit(0)
+                        
+                        run_analysis_mode(model_engines_full, pgn_path, oracle_engine, TIME_LIMIT_SECONDS, game_limit=estimated_games)
+                    else:
+                        logging.error("Benchmark failed. Could not estimate game time.")
+                else:
+                    logging.error("First game in PGN has too few moves for benchmark.")
+            else:
+                logging.error("PGN file is empty or invalid.")
+    except Exception as e:
+        logging.error(f"An error occurred during benchmark: {e}")

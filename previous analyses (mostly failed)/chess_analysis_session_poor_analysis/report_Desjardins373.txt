@@ -1,0 +1,2 @@
+Game 1: sananabdulla10 vs. Desjardins373 -> Est. Rating: 3500 (Model: Linear, R²=0.332, Moves: 19)
+  > Decision: Best checkpoint combo: 'depth_first' with template size 1 (R²=0.5768).

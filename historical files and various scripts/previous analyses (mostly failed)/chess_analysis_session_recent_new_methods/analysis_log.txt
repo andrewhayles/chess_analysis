@@ -1,0 +1,286 @@
+2025-07-06 17:41:24,950 - MainProcess - INFO - Oracle: stockfish_full_1. Model builders: 32 engines.
+2025-07-06 17:41:31,119 - MainProcess - INFO - --- Starting Analysis for Game: sananabdulla10 vs. Desjardins373 ---
+2025-07-06 17:41:31,119 - MainProcess - INFO - Generating ground truth template with stockfish_full_1...
+2025-07-06 17:41:43,992 - MainProcess - INFO - --- (1/32) Simulating with Leela_nodes_1000k ---
+2025-07-06 17:45:37,598 - MainProcess - INFO - Completed Leela_nodes_1000k. Need at least 3 engine results to calculate R². (1/32)
+2025-07-06 17:45:37,602 - MainProcess - INFO - --- (2/32) Simulating with stockfish_elo_3190 ---
+2025-07-06 17:55:44,037 - MainProcess - INFO - Completed stockfish_elo_3190. Need at least 3 engine results to calculate R². (2/32)
+2025-07-06 17:55:44,039 - MainProcess - INFO - --- (3/32) Simulating with stockfish_elo_3150 ---
+2025-07-06 18:05:48,588 - MainProcess - INFO - 
+--- LIVE UPDATE after 'stockfish_elo_3150' (3/32 engines) ---
+2025-07-06 18:05:48,590 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 18:05:48,592 - MainProcess - INFO -   - RWPL        : R² = 1.0000
+2025-07-06 18:05:48,592 - MainProcess - INFO -   - CAI         : R² = 1.0000
+2025-07-06 18:05:48,592 - MainProcess - INFO -   - Impact      : R² = 1.0000
+2025-07-06 18:05:48,594 - MainProcess - INFO -   - Complexity  : R² = 1.0000
+2025-07-06 18:05:48,594 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 18:05:48,594 - MainProcess - INFO - --- (4/32) Simulating with Leela_nodes_100k ---
+2025-07-06 18:09:35,809 - MainProcess - INFO - 
+--- LIVE UPDATE after 'Leela_nodes_100k' (4/32 engines) ---
+2025-07-06 18:09:35,811 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 18:09:35,811 - MainProcess - INFO -   - Complexity  : R² = 1.0000
+2025-07-06 18:09:35,811 - MainProcess - INFO -   - CAI         : R² = 1.0000
+2025-07-06 18:09:35,811 - MainProcess - INFO -   - Impact      : R² = 1.0000
+2025-07-06 18:09:35,811 - MainProcess - INFO -   - RWPL        : R² = 1.0000
+2025-07-06 18:09:35,811 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 18:09:35,811 - MainProcess - INFO - --- (5/32) Simulating with stockfish_elo_3060 ---
+2025-07-06 18:19:41,458 - MainProcess - INFO - 
+--- LIVE UPDATE after 'stockfish_elo_3060' (5/32 engines) ---
+2025-07-06 18:19:41,462 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 18:19:41,464 - MainProcess - INFO -   - Complexity  : R² = 1.0000
+2025-07-06 18:19:41,464 - MainProcess - INFO -   - CAI         : R² = 0.9974
+2025-07-06 18:19:41,466 - MainProcess - INFO -   - Impact      : R² = 0.9974
+2025-07-06 18:19:41,466 - MainProcess - INFO -   - RWPL        : R² = 0.9974
+2025-07-06 18:19:41,466 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 18:19:41,466 - MainProcess - INFO - --- (6/32) Simulating with stockfish_elo_2970 ---
+2025-07-06 18:29:46,035 - MainProcess - INFO - 
+--- LIVE UPDATE after 'stockfish_elo_2970' (6/32 engines) ---
+2025-07-06 18:29:46,037 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 18:29:46,039 - MainProcess - INFO -   - Complexity  : R² = 1.0000
+2025-07-06 18:29:46,039 - MainProcess - INFO -   - CAI         : R² = 0.8325
+2025-07-06 18:29:46,039 - MainProcess - INFO -   - Impact      : R² = 0.8325
+2025-07-06 18:29:46,039 - MainProcess - INFO -   - RWPL        : R² = 0.8325
+2025-07-06 18:29:46,039 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 18:29:46,039 - MainProcess - INFO - --- (7/32) Simulating with stockfish_elo_2880 ---
+2025-07-06 18:39:50,543 - MainProcess - INFO - 
+--- LIVE UPDATE after 'stockfish_elo_2880' (7/32 engines) ---
+2025-07-06 18:39:50,543 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 18:39:50,543 - MainProcess - INFO -   - RWPL        : R² = 0.4851
+2025-07-06 18:39:50,543 - MainProcess - INFO -   - CAI         : R² = 0.4851
+2025-07-06 18:39:50,543 - MainProcess - INFO -   - Impact      : R² = 0.4851
+2025-07-06 18:39:50,553 - MainProcess - INFO -   - Complexity  : R² = 0.0000
+2025-07-06 18:39:50,553 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 18:39:50,553 - MainProcess - INFO - --- (8/32) Simulating with Leela_nodes_10k ---
+2025-07-06 18:43:37,685 - MainProcess - INFO - 
+--- LIVE UPDATE after 'Leela_nodes_10k' (8/32 engines) ---
+2025-07-06 18:43:37,687 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 18:43:37,688 - MainProcess - INFO -   - Complexity  : R² = 1.0000
+2025-07-06 18:43:37,688 - MainProcess - INFO -   - CAI         : R² = 0.3352
+2025-07-06 18:43:37,688 - MainProcess - INFO -   - Impact      : R² = 0.3352
+2025-07-06 18:43:37,688 - MainProcess - INFO -   - RWPL        : R² = 0.3352
+2025-07-06 18:43:37,688 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 18:43:37,688 - MainProcess - INFO - --- (9/32) Simulating with stockfish_elo_2790 ---
+2025-07-06 18:53:43,655 - MainProcess - INFO - 
+--- LIVE UPDATE after 'stockfish_elo_2790' (9/32 engines) ---
+2025-07-06 18:53:43,655 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 18:53:43,657 - MainProcess - INFO -   - Complexity  : R² = 1.0000
+2025-07-06 18:53:43,659 - MainProcess - INFO -   - CAI         : R² = 0.2128
+2025-07-06 18:53:43,659 - MainProcess - INFO -   - Impact      : R² = 0.2128
+2025-07-06 18:53:43,659 - MainProcess - INFO -   - RWPL        : R² = 0.2128
+2025-07-06 18:53:43,661 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 18:53:43,661 - MainProcess - INFO - --- (10/32) Simulating with stockfish_elo_2700 ---
+2025-07-06 19:03:48,172 - MainProcess - INFO - 
+--- LIVE UPDATE after 'stockfish_elo_2700' (10/32 engines) ---
+2025-07-06 19:03:48,172 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 19:03:48,172 - MainProcess - INFO -   - CAI         : R² = 0.3062
+2025-07-06 19:03:48,172 - MainProcess - INFO -   - Impact      : R² = 0.3062
+2025-07-06 19:03:48,172 - MainProcess - INFO -   - RWPL        : R² = 0.3062
+2025-07-06 19:03:48,172 - MainProcess - INFO -   - Complexity  : R² = 0.0000
+2025-07-06 19:03:48,179 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 19:03:48,179 - MainProcess - INFO - --- (11/32) Simulating with stockfish_elo_2610 ---
+2025-07-06 19:13:52,745 - MainProcess - INFO - 
+--- LIVE UPDATE after 'stockfish_elo_2610' (11/32 engines) ---
+2025-07-06 19:13:52,747 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 19:13:52,747 - MainProcess - INFO -   - RWPL        : R² = 0.1815
+2025-07-06 19:13:52,747 - MainProcess - INFO -   - CAI         : R² = 0.1815
+2025-07-06 19:13:52,747 - MainProcess - INFO -   - Impact      : R² = 0.1815
+2025-07-06 19:13:52,747 - MainProcess - INFO -   - Complexity  : R² = 0.0000
+2025-07-06 19:13:52,749 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 19:13:52,749 - MainProcess - INFO - --- (12/32) Simulating with stockfish_elo_2520 ---
+2025-07-06 19:24:11,790 - MainProcess - INFO - 
+--- LIVE UPDATE after 'stockfish_elo_2520' (12/32 engines) ---
+2025-07-06 19:24:11,800 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 19:24:11,806 - MainProcess - INFO -   - RWPL        : R² = 0.7056
+2025-07-06 19:24:11,806 - MainProcess - INFO -   - CAI         : R² = 0.7056
+2025-07-06 19:24:11,806 - MainProcess - INFO -   - Impact      : R² = 0.7056
+2025-07-06 19:24:11,806 - MainProcess - INFO -   - Complexity  : R² = 0.0000
+2025-07-06 19:24:11,806 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 19:24:11,806 - MainProcess - INFO - --- (13/32) Simulating with stockfish_elo_2412 ---
+2025-07-06 19:34:16,333 - MainProcess - INFO - 
+--- LIVE UPDATE after 'stockfish_elo_2412' (13/32 engines) ---
+2025-07-06 19:34:16,337 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 19:34:16,339 - MainProcess - INFO -   - RWPL        : R² = 0.2494
+2025-07-06 19:34:16,341 - MainProcess - INFO -   - CAI         : R² = 0.2494
+2025-07-06 19:34:16,341 - MainProcess - INFO -   - Impact      : R² = 0.2494
+2025-07-06 19:34:16,341 - MainProcess - INFO -   - Complexity  : R² = 0.0000
+2025-07-06 19:34:16,344 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 19:34:16,346 - MainProcess - INFO - --- (14/32) Simulating with Leela_nodes_1k ---
+2025-07-06 19:38:17,875 - MainProcess - INFO - 
+--- LIVE UPDATE after 'Leela_nodes_1k' (14/32 engines) ---
+2025-07-06 19:38:17,879 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 19:38:17,883 - MainProcess - INFO -   - RWPL        : R² = 0.1560
+2025-07-06 19:38:17,885 - MainProcess - INFO -   - CAI         : R² = 0.1560
+2025-07-06 19:38:17,891 - MainProcess - INFO -   - Impact      : R² = 0.1560
+2025-07-06 19:38:17,891 - MainProcess - INFO -   - Complexity  : R² = 0.0000
+2025-07-06 19:38:17,893 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 19:38:17,895 - MainProcess - INFO - --- (15/32) Simulating with stockfish_elo_2250 ---
+2025-07-06 19:48:24,246 - MainProcess - INFO - 
+--- LIVE UPDATE after 'stockfish_elo_2250' (15/32 engines) ---
+2025-07-06 19:48:24,250 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 19:48:24,254 - MainProcess - INFO -   - CAI         : R² = 0.1767
+2025-07-06 19:48:24,254 - MainProcess - INFO -   - Impact      : R² = 0.1767
+2025-07-06 19:48:24,256 - MainProcess - INFO -   - RWPL        : R² = 0.1767
+2025-07-06 19:48:24,256 - MainProcess - INFO -   - Complexity  : R² = 0.0000
+2025-07-06 19:48:24,258 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 19:48:24,258 - MainProcess - INFO - --- (16/32) Simulating with stockfish_elo_2124 ---
+2025-07-06 19:58:28,925 - MainProcess - INFO - 
+--- LIVE UPDATE after 'stockfish_elo_2124' (16/32 engines) ---
+2025-07-06 19:58:28,925 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 19:58:28,927 - MainProcess - INFO -   - Complexity  : R² = 1.0000
+2025-07-06 19:58:28,929 - MainProcess - INFO -   - RWPL        : R² = 0.1020
+2025-07-06 19:58:28,929 - MainProcess - INFO -   - CAI         : R² = 0.1020
+2025-07-06 19:58:28,929 - MainProcess - INFO -   - Impact      : R² = 0.1020
+2025-07-06 19:58:28,929 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 19:58:28,929 - MainProcess - INFO - --- (17/32) Simulating with stockfish_elo_2007 ---
+2025-07-06 20:08:33,435 - MainProcess - INFO - 
+--- LIVE UPDATE after 'stockfish_elo_2007' (17/32 engines) ---
+2025-07-06 20:08:33,435 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 20:08:33,437 - MainProcess - INFO -   - Complexity  : R² = 1.0000
+2025-07-06 20:08:33,439 - MainProcess - INFO -   - RWPL        : R² = 0.0778
+2025-07-06 20:08:33,439 - MainProcess - INFO -   - CAI         : R² = 0.0778
+2025-07-06 20:08:33,441 - MainProcess - INFO -   - Impact      : R² = 0.0778
+2025-07-06 20:08:33,441 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 20:08:33,443 - MainProcess - INFO - --- (18/32) Simulating with maia_1900 ---
+2025-07-06 20:11:49,644 - MainProcess - INFO - 
+--- LIVE UPDATE after 'maia_1900' (18/32 engines) ---
+2025-07-06 20:11:49,648 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 20:11:49,648 - MainProcess - INFO -   - Complexity  : R² = 1.0000
+2025-07-06 20:11:49,648 - MainProcess - INFO -   - RWPL        : R² = 0.0981
+2025-07-06 20:11:49,648 - MainProcess - INFO -   - CAI         : R² = 0.0981
+2025-07-06 20:11:49,648 - MainProcess - INFO -   - Impact      : R² = 0.0981
+2025-07-06 20:11:49,648 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 20:11:49,648 - MainProcess - INFO - --- (19/32) Simulating with maia_1800 ---
+2025-07-06 20:15:03,807 - MainProcess - INFO - 
+--- LIVE UPDATE after 'maia_1800' (19/32 engines) ---
+2025-07-06 20:15:03,809 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 20:15:03,811 - MainProcess - INFO -   - RWPL        : R² = 0.1128
+2025-07-06 20:15:03,811 - MainProcess - INFO -   - CAI         : R² = 0.1128
+2025-07-06 20:15:03,811 - MainProcess - INFO -   - Impact      : R² = 0.1128
+2025-07-06 20:15:03,811 - MainProcess - INFO -   - Complexity  : R² = 0.0000
+2025-07-06 20:15:03,811 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 20:15:03,811 - MainProcess - INFO - --- (20/32) Simulating with Leela_nodes_100 ---
+2025-07-06 20:18:51,494 - MainProcess - INFO - 
+--- LIVE UPDATE after 'Leela_nodes_100' (20/32 engines) ---
+2025-07-06 20:18:51,496 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 20:18:51,496 - MainProcess - INFO -   - CAI         : R² = 0.1251
+2025-07-06 20:18:51,496 - MainProcess - INFO -   - Impact      : R² = 0.1251
+2025-07-06 20:18:51,496 - MainProcess - INFO -   - RWPL        : R² = 0.1251
+2025-07-06 20:18:51,498 - MainProcess - INFO -   - Complexity  : R² = 0.0000
+2025-07-06 20:18:51,498 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 20:18:51,498 - MainProcess - INFO - --- (21/32) Simulating with maia_1700 ---
+2025-07-06 20:22:05,043 - MainProcess - INFO - 
+--- LIVE UPDATE after 'maia_1700' (21/32 engines) ---
+2025-07-06 20:22:05,047 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 20:22:05,047 - MainProcess - INFO -   - RWPL        : R² = 0.1350
+2025-07-06 20:22:05,047 - MainProcess - INFO -   - CAI         : R² = 0.1350
+2025-07-06 20:22:05,047 - MainProcess - INFO -   - Impact      : R² = 0.1350
+2025-07-06 20:22:05,047 - MainProcess - INFO -   - Complexity  : R² = 0.0000
+2025-07-06 20:22:05,047 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 20:22:05,047 - MainProcess - INFO - --- (22/32) Simulating with maia_1600 ---
+2025-07-06 20:25:22,581 - MainProcess - INFO - 
+--- LIVE UPDATE after 'maia_1600' (22/32 engines) ---
+2025-07-06 20:25:22,585 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 20:25:22,585 - MainProcess - INFO -   - RWPL        : R² = 0.1401
+2025-07-06 20:25:22,585 - MainProcess - INFO -   - CAI         : R² = 0.1401
+2025-07-06 20:25:22,585 - MainProcess - INFO -   - Impact      : R² = 0.1401
+2025-07-06 20:25:22,585 - MainProcess - INFO -   - Complexity  : R² = 0.0000
+2025-07-06 20:25:22,585 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 20:25:22,585 - MainProcess - INFO - --- (23/32) Simulating with maia_1500 ---
+2025-07-06 20:28:34,753 - MainProcess - INFO - 
+--- LIVE UPDATE after 'maia_1500' (23/32 engines) ---
+2025-07-06 20:28:34,755 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 20:28:34,755 - MainProcess - INFO -   - CAI         : R² = 0.1454
+2025-07-06 20:28:34,755 - MainProcess - INFO -   - Impact      : R² = 0.1454
+2025-07-06 20:28:34,755 - MainProcess - INFO -   - RWPL        : R² = 0.1454
+2025-07-06 20:28:34,755 - MainProcess - INFO -   - Complexity  : R² = 0.0000
+2025-07-06 20:28:34,755 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 20:28:34,756 - MainProcess - INFO - --- (24/32) Simulating with maia_1400 ---
+2025-07-06 20:31:50,167 - MainProcess - INFO - 
+--- LIVE UPDATE after 'maia_1400' (24/32 engines) ---
+2025-07-06 20:31:50,168 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 20:31:50,168 - MainProcess - INFO -   - Complexity  : R² = 1.0000
+2025-07-06 20:31:50,168 - MainProcess - INFO -   - CAI         : R² = 0.1137
+2025-07-06 20:31:50,168 - MainProcess - INFO -   - Impact      : R² = 0.1137
+2025-07-06 20:31:50,170 - MainProcess - INFO -   - RWPL        : R² = 0.1137
+2025-07-06 20:31:50,170 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 20:31:50,170 - MainProcess - INFO - --- (25/32) Simulating with stockfish_elo_1320 ---
+2025-07-06 20:41:54,741 - MainProcess - INFO - 
+--- LIVE UPDATE after 'stockfish_elo_1320' (25/32 engines) ---
+2025-07-06 20:41:54,741 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 20:41:54,743 - MainProcess - INFO -   - Complexity  : R² = 1.0000
+2025-07-06 20:41:54,743 - MainProcess - INFO -   - RWPL        : R² = 0.3531
+2025-07-06 20:41:54,745 - MainProcess - INFO -   - CAI         : R² = 0.3445
+2025-07-06 20:41:54,745 - MainProcess - INFO -   - Impact      : R² = 0.3445
+2025-07-06 20:41:54,745 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 20:41:54,745 - MainProcess - INFO - --- (26/32) Simulating with stockfish_elo_1450 ---
+2025-07-06 20:51:59,250 - MainProcess - INFO - 
+--- LIVE UPDATE after 'stockfish_elo_1450' (26/32 engines) ---
+2025-07-06 20:51:59,250 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 20:51:59,259 - MainProcess - INFO -   - Complexity  : R² = 1.0000
+2025-07-06 20:51:59,259 - MainProcess - INFO -   - RWPL        : R² = 0.4702
+2025-07-06 20:51:59,259 - MainProcess - INFO -   - CAI         : R² = 0.4672
+2025-07-06 20:51:59,259 - MainProcess - INFO -   - Impact      : R² = 0.4672
+2025-07-06 20:51:59,259 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 20:51:59,259 - MainProcess - INFO - --- (27/32) Simulating with stockfish_elo_1650 ---
+2025-07-06 21:02:03,845 - MainProcess - INFO - 
+--- LIVE UPDATE after 'stockfish_elo_1650' (27/32 engines) ---
+2025-07-06 21:02:03,845 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 21:02:03,847 - MainProcess - INFO -   - Complexity  : R² = 1.0000
+2025-07-06 21:02:03,847 - MainProcess - INFO -   - RWPL        : R² = 0.3521
+2025-07-06 21:02:03,847 - MainProcess - INFO -   - CAI         : R² = 0.3503
+2025-07-06 21:02:03,847 - MainProcess - INFO -   - Impact      : R² = 0.3503
+2025-07-06 21:02:03,847 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 21:02:03,849 - MainProcess - INFO - --- (28/32) Simulating with stockfish_elo_1850 ---
+2025-07-06 21:12:08,833 - MainProcess - INFO - 
+--- LIVE UPDATE after 'stockfish_elo_1850' (28/32 engines) ---
+2025-07-06 21:12:08,839 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 21:12:08,841 - MainProcess - INFO -   - RWPL        : R² = 0.2874
+2025-07-06 21:12:08,841 - MainProcess - INFO -   - CAI         : R² = 0.2866
+2025-07-06 21:12:08,841 - MainProcess - INFO -   - Impact      : R² = 0.2866
+2025-07-06 21:12:08,841 - MainProcess - INFO -   - Complexity  : R² = 0.0000
+2025-07-06 21:12:08,841 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 21:12:08,843 - MainProcess - INFO - --- (29/32) Simulating with stockfish_elo_2050 ---
+2025-07-06 21:22:14,652 - MainProcess - INFO - 
+--- LIVE UPDATE after 'stockfish_elo_2050' (29/32 engines) ---
+2025-07-06 21:22:14,652 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 21:22:14,654 - MainProcess - INFO -   - CAI         : R² = 0.2617
+2025-07-06 21:22:14,654 - MainProcess - INFO -   - Impact      : R² = 0.2617
+2025-07-06 21:22:14,654 - MainProcess - INFO -   - RWPL        : R² = 0.2616
+2025-07-06 21:22:14,654 - MainProcess - INFO -   - Complexity  : R² = 0.0000
+2025-07-06 21:22:14,656 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 21:22:14,656 - MainProcess - INFO - --- (30/32) Simulating with maia_1300 ---
+2025-07-06 21:25:32,254 - MainProcess - INFO - 
+--- LIVE UPDATE after 'maia_1300' (30/32 engines) ---
+2025-07-06 21:25:32,256 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 21:25:32,258 - MainProcess - INFO -   - CAI         : R² = 0.2831
+2025-07-06 21:25:32,258 - MainProcess - INFO -   - Impact      : R² = 0.2831
+2025-07-06 21:25:32,258 - MainProcess - INFO -   - RWPL        : R² = 0.2808
+2025-07-06 21:25:32,260 - MainProcess - INFO -   - Complexity  : R² = 0.0000
+2025-07-06 21:25:32,260 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 21:25:32,260 - MainProcess - INFO - --- (31/32) Simulating with maia_1200 ---
+2025-07-06 21:28:49,553 - MainProcess - INFO - 
+--- LIVE UPDATE after 'maia_1200' (31/32 engines) ---
+2025-07-06 21:28:49,555 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 21:28:49,555 - MainProcess - INFO -   - CAI         : R² = 0.3313
+2025-07-06 21:28:49,555 - MainProcess - INFO -   - Impact      : R² = 0.3313
+2025-07-06 21:28:49,555 - MainProcess - INFO -   - RWPL        : R² = 0.3258
+2025-07-06 21:28:49,555 - MainProcess - INFO -   - Complexity  : R² = 0.0000
+2025-07-06 21:28:49,555 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 21:28:49,555 - MainProcess - INFO - --- (32/32) Simulating with maia_1100 ---
+2025-07-06 21:32:11,848 - MainProcess - INFO - 
+--- LIVE UPDATE after 'maia_1100' (32/32 engines) ---
+2025-07-06 21:32:11,850 - MainProcess - INFO - Current Framework R² Leaderboard:
+2025-07-06 21:32:11,850 - MainProcess - INFO -   - Complexity  : R² = 1.0000
+2025-07-06 21:32:11,850 - MainProcess - INFO -   - CAI         : R² = 0.3792
+2025-07-06 21:32:11,850 - MainProcess - INFO -   - Impact      : R² = 0.3792
+2025-07-06 21:32:11,850 - MainProcess - INFO -   - RWPL        : R² = 0.3706
+2025-07-06 21:32:11,850 - MainProcess - INFO - --------------------------------------------------
+2025-07-06 21:32:11,877 - MainProcess - INFO - 
+--- FINAL Framework R² Comparison ---
+2025-07-06 21:32:11,879 - MainProcess - INFO -   - Complexity  : R² = 1.0000
+2025-07-06 21:32:11,879 - MainProcess - INFO -   - CAI         : R² = 0.3792
+2025-07-06 21:32:11,879 - MainProcess - INFO -   - Impact      : R² = 0.3792
+2025-07-06 21:32:11,879 - MainProcess - INFO -   - RWPL        : R² = 0.3706
+2025-07-06 21:32:11,879 - MainProcess - INFO - --- Best Framework: Complexity (R² = 1.0000) ---
+
+2025-07-06 21:32:12,307 - MainProcess - INFO - Analysis complete. Graph for best framework saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\framework_comparison_graph.png

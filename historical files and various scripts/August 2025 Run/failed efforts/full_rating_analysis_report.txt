@@ -1,0 +1,82 @@
+Full Rating Analysis Report - 2025-08-30 16:07:58
+================================================================================
+Analyzed data from: 'granular_analysis_log_top3.csv'
+Total records processed: 18270
+Number of unique engines: 18
+================================================================================
+
+--- Scenario: Top1_Only ---
+Weights: {0: 1.0, 1: 0.0, 2: 0.0}
+
+         engine_name  rating  hit_percentage
+   stockfish_nodes_5    1500           46.70
+  stockfish_nodes_10    1600           46.50
+  stockfish_nodes_15    1700           46.40
+  stockfish_nodes_20    1800           46.80
+  stockfish_nodes_30    1900           47.09
+  stockfish_nodes_40    2000           47.39
+  stockfish_nodes_50    2100           47.29
+ stockfish_nodes_200    2200           49.66
+ stockfish_nodes_500    2400           48.47
+  stockfish_nodes_2k    2600           52.71
+  stockfish_nodes_5k    2750           57.64
+ stockfish_nodes_10k    3000           64.04
+ stockfish_nodes_20k    3200           65.91
+ stockfish_nodes_50k    3300           69.85
+stockfish_nodes_100k    3400           70.15
+stockfish_nodes_250k    3500           72.22
+              dragon    3550           69.56
+  stockfish_nodes_1M    3600           75.17
+
+--------------------------------------------------------------------------------
+
+--- Scenario: Balanced ---
+Weights: {0: 1.0, 1: 0.5, 2: 0.25}
+
+         engine_name  rating  hit_percentage
+   stockfish_nodes_5    1500           57.41
+  stockfish_nodes_10    1600           57.34
+  stockfish_nodes_15    1700           57.24
+  stockfish_nodes_20    1800           57.54
+  stockfish_nodes_30    1900           57.64
+  stockfish_nodes_40    2000           58.00
+  stockfish_nodes_50    2100           58.05
+ stockfish_nodes_200    2200           60.05
+ stockfish_nodes_500    2400           60.07
+  stockfish_nodes_2k    2600           64.04
+  stockfish_nodes_5k    2750           68.72
+ stockfish_nodes_10k    3000           73.97
+ stockfish_nodes_20k    3200           75.81
+ stockfish_nodes_50k    3300           79.33
+stockfish_nodes_100k    3400           80.34
+stockfish_nodes_250k    3500           81.75
+              dragon    3550           79.68
+  stockfish_nodes_1M    3600           84.16
+
+--------------------------------------------------------------------------------
+
+--- Scenario: Linear_Decay ---
+Weights: {0: 1.0, 1: 0.66, 2: 0.33}
+
+         engine_name  rating  hit_percentage
+   stockfish_nodes_5    1500           60.84
+  stockfish_nodes_10    1600           60.81
+  stockfish_nodes_15    1700           60.71
+  stockfish_nodes_20    1800           60.97
+  stockfish_nodes_30    1900           61.01
+  stockfish_nodes_40    2000           61.40
+  stockfish_nodes_50    2100           61.50
+ stockfish_nodes_200    2200           63.38
+ stockfish_nodes_500    2400           63.79
+  stockfish_nodes_2k    2600           67.67
+  stockfish_nodes_5k    2750           72.27
+ stockfish_nodes_10k    3000           77.14
+ stockfish_nodes_20k    3200           78.98
+ stockfish_nodes_50k    3300           82.37
+stockfish_nodes_100k    3400           83.61
+stockfish_nodes_250k    3500           84.80
+              dragon    3550           82.92
+  stockfish_nodes_1M    3600           87.04
+
+--------------------------------------------------------------------------------
+

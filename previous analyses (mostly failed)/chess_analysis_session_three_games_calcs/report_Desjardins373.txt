@@ -1,9 +1,0 @@
-Game 1: sananabdulla10 vs. Desjardins373 -> Est. Rating: 2735 (Model: Polynomial, R²=0.825, Moves: 19)
-  > Decision: Best checkpoint combo: 'time_first' with template size 3 (R²=0.8246).
-Game 2: claudorios15 vs. Desjardins373 -> Est. Rating: 3150 (Model: Polynomial, R²=0.740, Moves: 27)
-  > Decision: Best checkpoint combo: 'time_first' with template size 2 (R²=0.7397).
-Game 3: Desjardins373 vs. GNG5 -> Est. Rating: 3150 (Model: Linear, R²=0.648, Moves: 59)
-  > Decision: Best checkpoint combo: 'depth_first' with template size 3 (R²=0.7718).
---------------------------------------------------
-
-Final Average Estimated Rating: 3011 Elo across 3 games.

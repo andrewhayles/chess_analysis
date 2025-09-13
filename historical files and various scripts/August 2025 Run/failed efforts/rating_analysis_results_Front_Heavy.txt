@@ -1,0 +1,41 @@
+Rating Analysis Results for Scenario: Front_Heavy - 2025-08-30 10:59:05
+==================================================
+
+Weights Used: {0: 1.0, 1: 0.2, 2: 0.1}
+
+         engine_name  hit_percentage  rating
+           maia_1100           48.01  1100.0
+           maia_1200           49.28  1200.0
+           maia_1300           48.73  1300.0
+           maia_1400           50.92  1400.0
+           maia_1500           51.24  1500.0
+   stockfish_nodes_5            1.87  1500.0
+           maia_1600           50.88  1600.0
+  stockfish_nodes_10            1.83  1600.0
+           maia_1700           51.24  1700.0
+  stockfish_nodes_15            1.83  1700.0
+           maia_1800           49.62  1800.0
+  stockfish_nodes_20            1.71  1800.0
+           maia_1900           51.12  1900.0
+  stockfish_nodes_30            1.87  1900.0
+  stockfish_nodes_40            1.68  2000.0
+  stockfish_nodes_50           49.75  2100.0
+ stockfish_nodes_200           50.98  2200.0
+ stockfish_nodes_500           50.00  2400.0
+  stockfish_nodes_2k           54.66  2600.0
+  stockfish_nodes_5k           59.73  2750.0
+ stockfish_nodes_10k           64.49  3000.0
+ stockfish_nodes_20k           65.14  3200.0
+ stockfish_nodes_50k           70.13  3300.0
+stockfish_nodes_100k           70.33  3400.0
+stockfish_nodes_250k           72.33  3500.0
+              dragon           72.25  3550.0
+  stockfish_nodes_1M           75.51  3600.0
+    stockfish_full_1           78.23  3650.0
+       Desjardins373           50.58     NaN
+
+==================================================
+Analysis Summary:
+  R-squared: 0.9412
+  Your (Desjardins373) Hit Percentage: 50.58%
+  Final Estimated Rating: 2104

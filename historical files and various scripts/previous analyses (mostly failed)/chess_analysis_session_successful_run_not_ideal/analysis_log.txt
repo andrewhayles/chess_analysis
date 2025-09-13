@@ -1,0 +1,226 @@
+2025-07-04 18:16:39,243 - MainProcess - INFO - Loaded 1 oracle engines and 32 model-building engines.
+2025-07-04 18:16:50,320 - MainProcess - INFO - No existing session file found. Starting a new analysis.
+2025-07-04 18:16:50,585 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 18:16:50,585 - MainProcess - INFO - Found 84 games remaining to analyze.
+2025-07-04 18:16:50,585 - MainProcess - INFO - --- Starting Analysis for Game 1: sananabdulla10 vs. Desjardins373 ---
+2025-07-04 18:16:50,585 - MainProcess - INFO - Generating averaged ground truth with 1 oracle engines...
+2025-07-04 18:17:47,858 - MainProcess - INFO - Averaged ground truth generation complete.
+2025-07-04 18:17:47,860 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 18:17:47,860 - MainProcess - INFO - Building performance model with 32 real engines...
+2025-07-04 18:17:47,862 - MainProcess - INFO - Processing model engine 1/32: stockfish_elo_3150
+2025-07-04 18:19:56,589 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_3150. Avg quality: 0.9402 (19/19 moves analyzed)
+2025-07-04 18:19:56,595 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 18:19:56,597 - MainProcess - INFO - Processing model engine 2/32: stockfish_elo_3095
+2025-07-04 18:22:05,377 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_3095. Avg quality: 0.9338 (19/19 moves analyzed)
+2025-07-04 18:22:05,381 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 18:22:05,385 - MainProcess - INFO - Processing model engine 3/32: stockfish_elo_3039
+2025-07-04 18:24:14,284 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_3039. Avg quality: 0.8996 (19/19 moves analyzed)
+2025-07-04 18:24:14,286 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 18:24:14,286 - MainProcess - INFO - Processing model engine 4/32: stockfish_elo_2984
+2025-07-04 18:26:23,003 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2984. Avg quality: 0.9199 (19/19 moves analyzed)
+2025-07-04 18:26:23,007 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 18:26:23,007 - MainProcess - INFO - Processing model engine 5/32: stockfish_elo_2928
+2025-07-04 18:28:31,915 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2928. Avg quality: 0.8620 (19/19 moves analyzed)
+2025-07-04 18:28:31,925 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 18:28:31,925 - MainProcess - INFO - Processing model engine 6/32: stockfish_elo_2873
+2025-07-04 18:30:41,801 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2873. Avg quality: 0.9421 (19/19 moves analyzed)
+2025-07-04 18:30:41,805 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 18:30:41,807 - MainProcess - INFO - Processing model engine 7/32: stockfish_elo_2817
+2025-07-04 18:32:50,615 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2817. Avg quality: 0.8778 (19/19 moves analyzed)
+2025-07-04 18:32:50,617 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 18:32:50,618 - MainProcess - INFO - Processing model engine 8/32: stockfish_elo_2762
+2025-07-04 18:34:59,443 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2762. Avg quality: 0.9609 (19/19 moves analyzed)
+2025-07-04 18:34:59,453 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 18:34:59,455 - MainProcess - INFO - Processing model engine 9/32: stockfish_elo_2706
+2025-07-04 18:37:08,332 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2706. Avg quality: 0.8711 (19/19 moves analyzed)
+2025-07-04 18:37:08,336 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 18:37:08,338 - MainProcess - INFO - Processing model engine 10/32: stockfish_elo_2651
+2025-07-04 18:39:17,239 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2651. Avg quality: 0.8398 (19/19 moves analyzed)
+2025-07-04 18:39:17,253 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 18:39:17,253 - MainProcess - INFO - Processing model engine 11/32: stockfish_elo_2595
+2025-07-04 18:41:26,045 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2595. Avg quality: 0.8778 (19/19 moves analyzed)
+2025-07-04 18:41:26,049 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 18:41:26,049 - MainProcess - INFO - Processing model engine 12/32: stockfish_elo_2540
+2025-07-04 18:43:34,928 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2540. Avg quality: 0.8068 (19/19 moves analyzed)
+2025-07-04 18:43:34,930 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 18:43:34,930 - MainProcess - INFO - Processing model engine 13/32: stockfish_elo_2485
+2025-07-04 18:45:43,683 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2485. Avg quality: 0.7549 (19/19 moves analyzed)
+2025-07-04 18:45:43,685 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 18:45:43,685 - MainProcess - INFO - Processing model engine 14/32: stockfish_elo_2374
+2025-07-04 18:47:52,778 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2374. Avg quality: 0.8207 (19/19 moves analyzed)
+2025-07-04 18:47:52,786 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 18:47:52,786 - MainProcess - INFO - Processing model engine 15/32: stockfish_elo_2318
+2025-07-04 18:50:01,697 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2318. Avg quality: 0.8703 (19/19 moves analyzed)
+2025-07-04 18:50:01,699 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 18:50:01,699 - MainProcess - INFO - Processing model engine 16/32: stockfish_elo_2263
+2025-07-04 18:52:10,538 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2263. Avg quality: 0.7545 (19/19 moves analyzed)
+2025-07-04 18:52:10,544 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 18:52:10,544 - MainProcess - INFO - Processing model engine 17/32: stockfish_elo_2207
+2025-07-04 18:54:19,637 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2207. Avg quality: 0.7508 (19/19 moves analyzed)
+2025-07-04 18:54:19,640 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 18:54:19,640 - MainProcess - INFO - Processing model engine 18/32: stockfish_elo_2152
+2025-07-04 18:56:28,410 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2152. Avg quality: 0.7823 (19/19 moves analyzed)
+2025-07-04 18:56:28,414 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 18:56:28,416 - MainProcess - INFO - Processing model engine 19/32: stockfish_elo_2096
+2025-07-04 18:58:37,306 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2096. Avg quality: 0.7233 (19/19 moves analyzed)
+2025-07-04 18:58:37,310 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 18:58:37,310 - MainProcess - INFO - Processing model engine 20/32: stockfish_elo_2041
+2025-07-04 19:00:46,186 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2041. Avg quality: 0.8053 (19/19 moves analyzed)
+2025-07-04 19:00:46,188 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 19:00:46,190 - MainProcess - INFO - Processing model engine 21/32: stockfish_elo_1985
+2025-07-04 19:02:55,104 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_1985. Avg quality: 0.7560 (19/19 moves analyzed)
+2025-07-04 19:02:55,106 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 19:02:55,106 - MainProcess - INFO - Processing model engine 22/32: stockfish_elo_1930
+2025-07-04 19:05:04,393 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_1930. Avg quality: 0.8643 (19/19 moves analyzed)
+2025-07-04 19:05:04,395 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 19:05:04,395 - MainProcess - INFO - Processing model engine 23/32: stockfish_elo_1875
+2025-07-04 19:07:13,175 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_1875. Avg quality: 0.7534 (19/19 moves analyzed)
+2025-07-04 19:07:13,182 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 19:07:13,184 - MainProcess - INFO - Processing model engine 24/32: stockfish_elo_1819
+2025-07-04 19:09:22,061 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_1819. Avg quality: 0.7143 (19/19 moves analyzed)
+2025-07-04 19:09:22,065 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 19:09:22,065 - MainProcess - INFO - Processing model engine 25/32: stockfish_elo_1764
+2025-07-04 19:11:31,033 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_1764. Avg quality: 0.7647 (19/19 moves analyzed)
+2025-07-04 19:11:31,050 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 19:11:31,074 - MainProcess - INFO - Processing model engine 26/32: stockfish_elo_1708
+2025-07-04 19:14:01,017 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_1708. Avg quality: 0.6662 (19/19 moves analyzed)
+2025-07-04 19:14:01,025 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 19:14:01,025 - MainProcess - INFO - Processing model engine 27/32: stockfish_elo_1653
+2025-07-04 19:16:17,077 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_1653. Avg quality: 0.7628 (19/19 moves analyzed)
+2025-07-04 19:16:17,081 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 19:16:17,081 - MainProcess - INFO - Processing model engine 28/32: stockfish_elo_1542
+2025-07-04 19:18:26,832 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_1542. Avg quality: 0.7222 (19/19 moves analyzed)
+2025-07-04 19:18:26,834 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 19:18:26,835 - MainProcess - INFO - Processing model engine 29/32: stockfish_elo_1486
+2025-07-04 19:20:38,075 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_1486. Avg quality: 0.7030 (19/19 moves analyzed)
+2025-07-04 19:20:38,079 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 19:20:38,079 - MainProcess - INFO - Processing model engine 30/32: stockfish_elo_1431
+2025-07-04 19:22:48,788 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_1431. Avg quality: 0.6406 (19/19 moves analyzed)
+2025-07-04 19:22:48,790 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 19:22:48,790 - MainProcess - INFO - Processing model engine 31/32: stockfish_elo_1375
+2025-07-04 19:24:58,994 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_1375. Avg quality: 0.6451 (19/19 moves analyzed)
+2025-07-04 19:24:58,997 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 19:24:58,997 - MainProcess - INFO - Processing model engine 32/32: stockfish_elo_1320
+2025-07-04 19:27:10,144 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_1320. Avg quality: 0.5744 (19/19 moves analyzed)
+2025-07-04 19:27:10,152 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 19:27:10,188 - MainProcess - INFO - Model selected: Polynomial. R-squared: 0.7673
+2025-07-04 19:27:10,188 - MainProcess - INFO -   (Scores: Linear R²=0.7469, Polynomial R²=0.7673)
+2025-07-04 19:27:10,493 - MainProcess - INFO - Analyzing player moves...
+2025-07-04 19:28:32,874 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 19:28:32,874 - MainProcess - INFO - --- Finished Analysis for Game 1. Estimated rating: 1848. ---
+2025-07-04 19:28:32,876 - MainProcess - INFO - 
+Final Average Estimated Rating: 1848 Elo across 1 games.
+2025-07-04 19:28:32,878 - MainProcess - INFO - Generating final PDF report...
+2025-07-04 19:38:46,120 - MainProcess - INFO - Loaded 1 oracle engines and 32 model-building engines.
+2025-07-04 19:39:24,149 - MainProcess - INFO - Found existing session file: C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json, resuming analysis.
+2025-07-04 19:39:24,151 - MainProcess - INFO - Found 83 games remaining to analyze.
+2025-07-04 19:39:24,155 - MainProcess - INFO - --- Starting Analysis for Game 2: claudorios15 vs. Desjardins373 ---
+2025-07-04 19:39:24,157 - MainProcess - INFO - Generating averaged ground truth with 1 oracle engines...
+2025-07-04 19:41:08,813 - MainProcess - INFO - Averaged ground truth generation complete.
+2025-07-04 19:41:08,821 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 19:41:08,823 - MainProcess - INFO - Building performance model with 32 real engines...
+2025-07-04 19:41:08,823 - MainProcess - INFO - Processing model engine 1/32: stockfish_elo_3150
+2025-07-04 19:44:08,303 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_3150. Avg quality: 0.9148 (27/27 moves analyzed)
+2025-07-04 19:44:08,309 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 19:44:08,311 - MainProcess - INFO - Processing model engine 2/32: stockfish_elo_3095
+2025-07-04 19:47:08,289 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_3095. Avg quality: 0.8963 (27/27 moves analyzed)
+2025-07-04 19:47:08,297 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 19:47:08,299 - MainProcess - INFO - Processing model engine 3/32: stockfish_elo_3039
+2025-07-04 19:50:07,450 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_3039. Avg quality: 0.8852 (27/27 moves analyzed)
+2025-07-04 19:50:07,454 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 19:50:07,454 - MainProcess - INFO - Processing model engine 4/32: stockfish_elo_2984
+2025-07-04 19:53:20,574 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2984. Avg quality: 0.8817 (27/27 moves analyzed)
+2025-07-04 19:53:20,587 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 19:53:20,587 - MainProcess - INFO - Processing model engine 5/32: stockfish_elo_2928
+2025-07-04 19:56:19,619 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2928. Avg quality: 0.8923 (27/27 moves analyzed)
+2025-07-04 19:56:19,625 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 19:56:19,625 - MainProcess - INFO - Processing model engine 6/32: stockfish_elo_2873
+2025-07-04 19:59:18,182 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2873. Avg quality: 0.8577 (27/27 moves analyzed)
+2025-07-04 19:59:18,188 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 19:59:18,191 - MainProcess - INFO - Processing model engine 7/32: stockfish_elo_2817
+2025-07-04 20:02:16,834 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2817. Avg quality: 0.8624 (27/27 moves analyzed)
+2025-07-04 20:02:16,836 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 20:02:16,836 - MainProcess - INFO - Processing model engine 8/32: stockfish_elo_2762
+2025-07-04 20:05:15,725 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2762. Avg quality: 0.8063 (27/27 moves analyzed)
+2025-07-04 20:05:15,726 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 20:05:15,726 - MainProcess - INFO - Processing model engine 9/32: stockfish_elo_2706
+2025-07-04 20:08:14,237 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2706. Avg quality: 0.8008 (27/27 moves analyzed)
+2025-07-04 20:08:14,243 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 20:08:14,245 - MainProcess - INFO - Processing model engine 10/32: stockfish_elo_2651
+2025-07-04 20:11:12,796 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2651. Avg quality: 0.8685 (27/27 moves analyzed)
+2025-07-04 20:11:12,798 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 20:11:12,800 - MainProcess - INFO - Processing model engine 11/32: stockfish_elo_2595
+2025-07-04 20:14:11,398 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2595. Avg quality: 0.7616 (27/27 moves analyzed)
+2025-07-04 20:14:11,402 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 20:14:11,402 - MainProcess - INFO - Processing model engine 12/32: stockfish_elo_2540
+2025-07-04 20:17:09,865 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2540. Avg quality: 0.7913 (27/27 moves analyzed)
+2025-07-04 20:17:09,869 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 20:17:09,869 - MainProcess - INFO - Processing model engine 13/32: stockfish_elo_2485
+2025-07-04 20:25:54,916 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2485. Avg quality: 0.8066 (27/27 moves analyzed)
+2025-07-04 20:25:54,924 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 20:25:54,926 - MainProcess - INFO - Processing model engine 14/32: stockfish_elo_2374
+2025-07-04 20:28:53,901 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2374. Avg quality: 0.7415 (27/27 moves analyzed)
+2025-07-04 20:28:53,903 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 20:28:53,903 - MainProcess - INFO - Processing model engine 15/32: stockfish_elo_2318
+2025-07-04 20:31:54,152 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2318. Avg quality: 0.7037 (27/27 moves analyzed)
+2025-07-04 20:31:54,152 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 20:31:54,152 - MainProcess - INFO - Processing model engine 16/32: stockfish_elo_2263
+2025-07-04 20:34:53,174 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2263. Avg quality: 0.8331 (27/27 moves analyzed)
+2025-07-04 20:34:53,178 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 20:34:53,180 - MainProcess - INFO - Processing model engine 17/32: stockfish_elo_2207
+2025-07-04 20:37:51,805 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2207. Avg quality: 0.7730 (27/27 moves analyzed)
+2025-07-04 20:37:51,805 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 20:37:51,805 - MainProcess - INFO - Processing model engine 18/32: stockfish_elo_2152
+2025-07-04 20:40:50,665 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2152. Avg quality: 0.8032 (27/27 moves analyzed)
+2025-07-04 20:40:50,673 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 20:40:50,677 - MainProcess - INFO - Processing model engine 19/32: stockfish_elo_2096
+2025-07-04 20:43:51,265 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2096. Avg quality: 0.8063 (27/27 moves analyzed)
+2025-07-04 20:43:51,270 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 20:43:51,270 - MainProcess - INFO - Processing model engine 20/32: stockfish_elo_2041
+2025-07-04 20:46:55,518 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_2041. Avg quality: 0.6868 (27/27 moves analyzed)
+2025-07-04 20:46:55,523 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 20:46:55,524 - MainProcess - INFO - Processing model engine 21/32: stockfish_elo_1985
+2025-07-04 20:49:55,362 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_1985. Avg quality: 0.7021 (27/27 moves analyzed)
+2025-07-04 20:49:55,365 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 20:49:55,366 - MainProcess - INFO - Processing model engine 22/32: stockfish_elo_1930
+2025-07-04 20:52:54,818 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_1930. Avg quality: 0.6767 (27/27 moves analyzed)
+2025-07-04 20:52:54,821 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 20:52:54,822 - MainProcess - INFO - Processing model engine 23/32: stockfish_elo_1875
+2025-07-04 20:55:53,966 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_1875. Avg quality: 0.8021 (27/27 moves analyzed)
+2025-07-04 20:55:53,974 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 20:55:53,974 - MainProcess - INFO - Processing model engine 24/32: stockfish_elo_1819
+2025-07-04 20:58:54,014 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_1819. Avg quality: 0.7751 (27/27 moves analyzed)
+2025-07-04 20:58:54,017 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 20:58:54,017 - MainProcess - INFO - Processing model engine 25/32: stockfish_elo_1764
+2025-07-04 21:02:00,718 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_1764. Avg quality: 0.7251 (27/27 moves analyzed)
+2025-07-04 21:02:00,724 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 21:02:00,725 - MainProcess - INFO - Processing model engine 26/32: stockfish_elo_1708
+2025-07-04 21:05:23,856 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_1708. Avg quality: 0.5603 (27/27 moves analyzed)
+2025-07-04 21:05:23,858 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 21:05:23,860 - MainProcess - INFO - Processing model engine 27/32: stockfish_elo_1653
+2025-07-04 21:08:25,250 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_1653. Avg quality: 0.6217 (27/27 moves analyzed)
+2025-07-04 21:08:25,257 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 21:08:25,257 - MainProcess - INFO - Processing model engine 28/32: stockfish_elo_1542
+2025-07-04 21:11:28,182 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_1542. Avg quality: 0.6336 (27/27 moves analyzed)
+2025-07-04 21:11:28,184 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 21:11:28,184 - MainProcess - INFO - Processing model engine 29/32: stockfish_elo_1486
+2025-07-04 21:14:27,792 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_1486. Avg quality: 0.7180 (27/27 moves analyzed)
+2025-07-04 21:14:27,795 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 21:14:27,795 - MainProcess - INFO - Processing model engine 30/32: stockfish_elo_1431
+2025-07-04 21:17:32,927 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_1431. Avg quality: 0.5783 (27/27 moves analyzed)
+2025-07-04 21:17:32,938 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 21:17:32,938 - MainProcess - INFO - Processing model engine 31/32: stockfish_elo_1375
+2025-07-04 21:20:35,980 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_1375. Avg quality: 0.5831 (27/27 moves analyzed)
+2025-07-04 21:20:35,984 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 21:20:35,984 - MainProcess - INFO - Processing model engine 32/32: stockfish_elo_1320
+2025-07-04 21:23:56,011 - MainProcess - INFO -   -> Model data for engine: stockfish_elo_1320. Avg quality: 0.5262 (27/27 moves analyzed)
+2025-07-04 21:23:56,017 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 21:23:56,110 - MainProcess - INFO - Model selected: Polynomial. R-squared: 0.7799
+2025-07-04 21:23:56,112 - MainProcess - INFO -   (Scores: Linear R²=0.7474, Polynomial R²=0.7799)
+2025-07-04 21:23:56,566 - MainProcess - INFO - Analyzing player moves...
+2025-07-04 21:25:54,648 - MainProcess - INFO - Session progress saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\goalgames.session.json
+2025-07-04 21:25:54,650 - MainProcess - INFO - --- Finished Analysis for Game 2. Estimated rating: 2661. ---
+2025-07-04 21:26:05,704 - MainProcess - INFO - All games have been analyzed or queue is empty.
+2025-07-04 21:26:05,716 - MainProcess - INFO - 
+Final Average Estimated Rating: 2254 Elo across 2 games.
+2025-07-04 21:26:05,716 - MainProcess - INFO - Generating final PDF report...

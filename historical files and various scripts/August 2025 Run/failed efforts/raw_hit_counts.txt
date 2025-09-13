@@ -1,0 +1,24 @@
+Raw Hit Count Data - 2025-08-30 09:34:03
+================================================================================
+
+         engine_name  Total Moves  Top 1 Hits  Top 2 Hits  Top 3 Hits  Top 1 %  Top 2 %  Top 3 %
+  stockfish_elo_1320          520           5           0           5     0.96     0.00     0.96
+  stockfish_elo_1400          520           5           1           6     0.96     0.19     1.15
+  stockfish_elo_1500          520           8           1           1     1.54     0.19     0.19
+  stockfish_elo_1600          520           9           2           3     1.73     0.38     0.58
+  stockfish_elo_1700          520           6           4           4     1.15     0.77     0.77
+  stockfish_elo_1800          520           4           3           4     0.77     0.58     0.77
+  stockfish_elo_1900          519           4           5           4     0.77     0.96     0.77
+  stockfish_nodes_50           18           7           4           2    38.89    22.22    11.11
+ stockfish_nodes_200           18           8           3           3    44.44    16.67    16.67
+ stockfish_nodes_500           18           9           3           4    50.00    16.67    22.22
+  stockfish_nodes_2k           18          10           3           3    55.56    16.67    16.67
+  stockfish_nodes_5k           18           9           3           3    50.00    16.67    16.67
+ stockfish_nodes_10k           18          11           2           3    61.11    11.11    16.67
+ stockfish_nodes_20k           18          13           1           2    72.22     5.56    11.11
+ stockfish_nodes_50k           18          11           2           3    61.11    11.11    16.67
+stockfish_nodes_100k           18          11           2           3    61.11    11.11    16.67
+stockfish_nodes_250k           18          12           2           2    66.67    11.11    11.11
+              dragon           18          16           2           0    88.89    11.11     0.00
+  stockfish_nodes_1M           18          14           0           2    77.78     0.00    11.11
+    stockfish_full_1           17          13           1           2    76.47     5.88    11.76

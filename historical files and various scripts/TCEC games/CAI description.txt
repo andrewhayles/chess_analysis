@@ -1,0 +1,15 @@
+4.3 Proposed Framework 2: The Context-Aware Impact (CAI) Score
+
+This framework is designed to measure Game-Swinging Impact. It weights the objective error of a move by the criticality of the position in which it was made.
+Principle: A move's quality is its objective error multiplied by the importance of the moment. Mistakes in critical positions are more significant than identical mistakes in quiet positions.
+Calculation Steps:
+Calculate the objective error of the move as the Win Probability Loss (WPLoss​), as in Framework 1.
+Calculate a Criticality factor for the position, normalized to a range of ``. This can be derived from the evaluation gap, Δ=E1​−E2​. A simple normalization function is a clipped sigmoid:
+Criticality=min(1,1+e−k3​×Δ2​−1)
+
+Here, k3​ is a parameter that controls how quickly the criticality score saturates (e.g., at what Δ value is a position considered "maximally critical").
+Calculate the move's Impact by weighting the error by its criticality:
+Impact=WPLoss​×(1+w×Criticality)
+
+Here, w is a weighting factor that determines how much criticality amplifies the error score. A value of w=1 means a mistake in a maximally critical position is penalized twice as much as the same mistake in a non-critical position.
+The final CAI score is this Impact value mapped to the desired [-100, 100] scale, similar to the mapping in Framework 1. This score heavily penalizes blunders made in sharp, tactical moments while being more forgiving of minor inaccuracies in settled, strategic positions.

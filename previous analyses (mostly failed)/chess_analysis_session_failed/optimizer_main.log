@@ -1,5 +1,0 @@
-2025-07-07 22:42:36,164 - MainProcess - INFO - Oracle: stockfish_full_1. Model builders: 18 engines.
-2025-07-07 22:42:36,164 - MainProcess - INFO - Script will run for a maximum of 8.5 hours.
-2025-07-07 22:43:10,094 - MainProcess - WARNING - New PGN/script version detected or no session found. Starting a new session.
-2025-07-07 22:43:10,094 - MainProcess - INFO - --- Starting Optimization Mode ---
-2025-07-07 22:43:10,094 - MainProcess - INFO - Step 1: Collecting simulation data from the training PGN...

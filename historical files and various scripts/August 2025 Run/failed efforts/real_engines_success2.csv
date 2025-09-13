@@ -1,0 +1,23 @@
+engine_name,path,rating,uci_options,executable_name
+maia_1100,"C:/Users/desja/Documents/my_programming/chess_analysis/engines/leela_chess/m1100.bat",1100,"{""Nodes"": 1}",m1100.bat
+maia_1200,"C:/Users/desja/Documents/my_programming/chess_analysis/engines/leela_chess/m1200.bat",1200,"{""Nodes"": 1}",m1200.bat
+maia_1300,"C:/Users/desja/Documents/my_programming/chess_analysis/engines/leela_chess/m1300.bat",1300,"{""Nodes"": 1}",m1300.bat
+maia_1400,"C:/Users/desja/Documents/my_programming/chess_analysis/engines/leela_chess/m1400.bat",1400,"{""Nodes"": 1}",m1400.bat
+maia_1500,"C:/Users/desja/Documents/my_programming/chess_analysis/engines/leela_chess/m1500.bat",1500,"{""Nodes"": 1}",m1500.bat
+maia_1600,"C:/Users/desja/Documents/my_programming/chess_analysis/engines/leela_chess/m1600.bat",1600,"{""Nodes"": 1}",m1600.bat
+maia_1700,"C:/Users/desja/Documents/my_programming/chess_analysis/engines/leela_chess/m1700.bat",1700,"{""Nodes"": 1}",m1700.bat
+maia_1800,"C:/Users/desja/Documents/my_programming/chess_analysis/engines/leela_chess/m1800.bat",1800,"{""Nodes"": 1}",m1800.bat
+maia_1900,"C:/Users/desja/Documents/my_programming/chess_analysis/engines/leela_chess/m1900.bat",1900,"{""Nodes"": 1}",m1900.bat
+stockfish_nodes_50,"C:/Users/desja/Documents/my_programming/chess_analysis/engines/stockfish/stockfish-windows-x86-64-sse41-popcnt.exe",2100,"{""Nodes"": 50}",stockfish-windows-x86-64-sse41-popcnt.exe
+stockfish_nodes_200,"C:/Users/desja/Documents/my_programming/chess_analysis/engines/stockfish/stockfish-windows-x86-64-sse41-popcnt.exe",2200,"{""Nodes"": 200}",stockfish-windows-x86-64-sse41-popcnt.exe
+stockfish_nodes_500,"C:/Users/desja/Documents/my_programming/chess_analysis/engines/stockfish/stockfish-windows-x86-64-sse41-popcnt.exe",2400,"{""Nodes"": 500}",stockfish-windows-x86-64-sse41-popcnt.exe
+stockfish_nodes_2k,"C:/Users/desja/Documents/my_programming/chess_analysis/engines/stockfish/stockfish-windows-x86-64-sse41-popcnt.exe",2600,"{""Nodes"": 2000}",stockfish-windows-x86-64-sse41-popcnt.exe
+stockfish_nodes_5k,"C:/Users/desja/Documents/my_programming/chess_analysis/engines/stockfish/stockfish-windows-x86-64-sse41-popcnt.exe",2750,"{""Nodes"": 5000}",stockfish-windows-x86-64-sse41-popcnt.exe
+stockfish_nodes_10k,"C:/Users/desja/Documents/my_programming/chess_analysis/engines/stockfish/stockfish-windows-x86-64-sse41-popcnt.exe",3000,"{""Nodes"": 10000}",stockfish-windows-x86-64-sse41-popcnt.exe
+stockfish_nodes_20k,"C:/Users/desja/Documents/my_programming/chess_analysis/engines/stockfish/stockfish-windows-x86-64-sse41-popcnt.exe",3200,"{""Nodes"": 20000}",stockfish-windows-x86-64-sse41-popcnt.exe
+stockfish_nodes_50k,"C:/Users/desja/Documents/my_programming/chess_analysis/engines/stockfish/stockfish-windows-x86-64-sse41-popcnt.exe",3300,"{""Nodes"": 50000}",stockfish-windows-x86-64-sse41-popcnt.exe
+stockfish_nodes_100k,"C:/Users/desja/Documents/my_programming/chess_analysis/engines/stockfish/stockfish-windows-x86-64-sse41-popcnt.exe",3400,"{""Nodes"": 100000}",stockfish-windows-x86-64-sse41-popcnt.exe
+stockfish_nodes_250k,"C:/Users/desja/Documents/my_programming/chess_analysis/engines/stockfish/stockfish-windows-x86-64-sse41-popcnt.exe",3500,"{""Nodes"": 250000}",stockfish-windows-x86-64-sse41-popcnt.exe
+stockfish_nodes_1M,"C:/Users/desja/Documents/my_programming/chess_analysis/engines/stockfish/stockfish-windows-x86-64-sse41-popcnt.exe",3600,"{""Nodes"": 1000000}",stockfish-windows-x86-64-sse41-popcnt.exe
+stockfish_full_1,"C:/Users/desja/Documents/my_programming/chess_analysis/engines/stockfish/stockfish-windows-x86-64-sse41-popcnt.exe",3650,"{""time"": 300}",stockfish-windows-x86-64-sse41-popcnt.exe
+dragon,"C:/Users/desja/Documents/my_programming/chess_analysis/engines/dragon/dragon_05e2a7/Windows/dragon-64bit.exe",3550,"{""Nodes"": 500000}",dragon-64bit.exe

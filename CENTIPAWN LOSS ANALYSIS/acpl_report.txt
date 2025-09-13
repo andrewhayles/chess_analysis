@@ -1,0 +1,46 @@
+
+ACPL (Average Centipawn Loss) Report for: Desjardins373
+=====================================================
+
+Calculated ACPL: 54.09
+Analyzed Moves: 3683
+
+Estimated Skill Level: Expert / Club Player Level
+
+---
+What is ACPL?
+---
+Average Centipawn Loss (ACPL) is a metric used to measure the accuracy of chess moves.
+A "centipawn" is 1/100th of a pawn. ACPL represents the average number of centipawns
+you lost per move compared to the engine's best move. A lower ACPL means your moves
+were closer to the computer's top choices, indicating higher accuracy.
+
+---
+Practical ACPL Tiers (Perspective):
+---
+These ranges are approximations, particularly for games with faster time controls,
+but they provide a useful reference point for self-assessment.
+
+- 10-20:  Super Grandmaster (2700+ Elo): World-class precision, frequently dropping
+          into single digits in top-level matches.
+
+- 20-25:  Grandmaster (2500-2700 Elo): Exceptional consistency and a low
+          frequency of significant errors.
+
+- 25-35:  Master (2200-2400 Elo): Strong, professional-level play, indicating
+          a solid performance.
+
+- 30-60:  Expert / Club Player (1800-2200 Elo): Represents strong amateur and
+          tournament players. Averages in the 50s and 60s are common,
+          especially in faster time controls.
+
+- 60-120: Intermediate Player (1200-1800 Elo): A typical range for the large
+          cohort of intermediate players. Games are often decided by more
+          obvious tactical mistakes.
+
+- 100+:   Novice / Beginner (<1200 Elo): Fundamental blunders are common. Scores
+          of 150 or higher are commonplace. An ACPL over 300 suggests a player
+          is very new to the game.
+
+Note: These ranges are approximate and can be affected by the complexity of the games,
+time control, and the depth of the analysis engine.

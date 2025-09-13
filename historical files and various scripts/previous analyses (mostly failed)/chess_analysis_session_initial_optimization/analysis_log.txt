@@ -1,0 +1,27 @@
+2025-07-07 13:44:19,829 - MainProcess - INFO - Oracle: stockfish_full_1. Model builders: 32 engines.
+2025-07-07 13:44:40,400 - MainProcess - WARNING - New PGN/script version detected or no session found. Starting a new session.
+2025-07-07 13:44:40,400 - MainProcess - INFO - --- Starting Optimization Mode ---
+2025-07-07 13:44:40,400 - MainProcess - INFO - Step 1: Collecting simulation data from the training PGN...
+2025-07-07 13:44:40,477 - MainProcess - INFO - 
+--- Analyzing Game 1: sananabdulla10 vs. Desjardins373 ---
+2025-07-07 14:20:22,136 - SpawnPoolWorker-2 - ERROR - Worker 'model_simulation' for Leela_nodes_100 on FEN 'r1bqr1k1/ppp2ppp/3pn3/3N4/P3P3/3Q4/1P1N1PPP/R4RK1 b - - 4 14' failed: 
+2025-07-07 14:21:40,261 - SpawnPoolWorker-1 - ERROR - Worker 'model_simulation' for Leela_nodes_100 on FEN 'r1bqr1k1/ppp2ppp/2np4/3N4/P3P3/8/1P1NQPPP/R3K2R b KQ - 0 12' failed: 
+2025-07-07 14:46:08,776 - SpawnPoolWorker-1 - ERROR - Worker 'model_simulation' for maia_1200 on FEN 'r3r1k1/ppp2ppp/3p4/5b2/P3nN2/5P2/1P1N2PP/R3R1K1 b - - 0 19' failed: 
+2025-07-07 14:46:18,901 - SpawnPoolWorker-1 - ERROR - Worker 'model_simulation' for maia_1200 on FEN 'r1b1r1k1/ppp2ppp/3p4/2nN2q1/P3PQ2/8/1P1N1PPP/R4RK1 b - - 8 16' failed: 
+2025-07-07 14:47:40,348 - SpawnPoolWorker-1 - ERROR - Worker 'model_simulation' for maia_1200 on FEN 'r1bqr1k1/ppp2ppp/2np4/3N4/P3P3/8/1P1NQPPP/R3K2R b KQ - 0 12' failed: 
+2025-07-07 14:47:50,683 - SpawnPoolWorker-1 - ERROR - Worker 'model_simulation' for maia_1100 on FEN 'r1bqr1k1/ppp2ppp/3p4/3N4/P2nP3/3Q4/1P1N1PPP/R3K2R b KQ - 2 13' failed: 
+2025-07-07 14:48:00,965 - SpawnPoolWorker-1 - ERROR - Worker 'model_simulation' for maia_1100 on FEN 'r1b1r1k1/ppp2ppp/3p4/2n5/P3PN2/8/1P1N1PPP/R4RK1 b - - 0 17' failed: 
+2025-07-07 14:50:17,651 - SpawnPoolWorker-1 - ERROR - Worker 'model_simulation' for maia_1100 on FEN 'r1bqr1k1/ppp2ppp/3p4/2nN4/P3P3/5Q2/1P1N1PPP/R4RK1 b - - 6 15' failed: 
+2025-07-07 14:51:32,748 - MainProcess - INFO - Saved progress for game 2025.03.02_sananabdulla10_Desjardins373_0 to session file.
+2025-07-07 14:51:32,768 - MainProcess - INFO - 
+--- Analyzing Game 2: claudorios15 vs. Desjardins373 ---
+2025-07-07 16:18:15,053 - SpawnPoolWorker-1 - ERROR - Worker 'model_simulation' for maia_1100 on FEN 'r5k1/1pp4r/2n4p/p4b2/4p3/5n2/PPP4P/1K1R2R1 b - - 1 26' failed: 
+2025-07-07 16:23:08,336 - MainProcess - INFO - Saved progress for game 2025.03.05_claudorios15_Desjardins373_519 to session file.
+2025-07-07 16:23:08,342 - MainProcess - INFO - 
+--- Analyzing Game 3: Desjardins373 vs. GNG5 ---
+2025-07-07 16:42:44,505 - SpawnPoolWorker-1 - ERROR - Worker 'model_simulation' for stockfish_elo_2880 on FEN '8/7p/4pp1k/3q4/4r3/2K5/8/8 w - - 6 54' failed: 
+2025-07-07 17:39:12,949 - SpawnPoolWorker-2 - ERROR - Worker 'model_simulation' for maia_1500 on FEN '6k1/5p1p/4p1p1/1r6/p4P2/2Q5/qP3KPP/8 w - - 0 32' failed: 
+2025-07-07 18:03:03,842 - MainProcess - INFO - Saved progress for game 2025.03.06_Desjardins373_GNG5_1145 to session file.
+2025-07-07 18:03:03,854 - MainProcess - INFO - 
+--- Analyzing Game 4: Desjardins373 vs. tratohecho ---
+2025-07-07 18:09:58,768 - MainProcess - INFO - Oracle: stockfish_full_1. Model builders: 32 engines.

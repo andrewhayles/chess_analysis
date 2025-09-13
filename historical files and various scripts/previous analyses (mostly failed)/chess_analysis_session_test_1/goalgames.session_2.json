@@ -1,0 +1,161 @@
+{
+  "pgn_file": "C:\\Users\\desja\\Documents\\Python_programs\\chess_study\\all rapid games since making goal from chess.com\\goalgames.pgn",
+  "in_progress_game": {
+    "ground_truth_template": {
+      "r1b1r1k1/ppp2ppp/3p4/2nN2q1/P3PQ2/8/1P1N1PPP/R4RK1 b - - 8 16": [
+        {
+          "move": "g5f4",
+          "eval": 333
+        },
+        {
+          "move": "g5d8",
+          "eval": 96
+        },
+        {
+          "move": "g5e5",
+          "eval": -49
+        },
+        {
+          "move": "g5g6",
+          "eval": -96
+        },
+        {
+          "move": "e8e5",
+          "eval": -101
+        }
+      ]
+    },
+    "simulation_results": {
+      "r1b1r1k1/ppp2ppp/3p4/2nN2q1/P3PQ2/8/1P1N1PPP/R4RK1 b - - 8 16": {
+        "Leela_nodes_1000k": {
+          "move": "g5f4",
+          "eval": 312
+        },
+        "stockfish_elo_3190": {
+          "move": "g5f4",
+          "eval": 290
+        },
+        "stockfish_elo_3150": {
+          "move": "g5f4",
+          "eval": 290
+        },
+        "Leela_nodes_100k": {
+          "move": "g5f4",
+          "eval": 312
+        },
+        "stockfish_elo_3060": {
+          "move": "g5f4",
+          "eval": 290
+        },
+        "stockfish_elo_2970": {
+          "move": "g5f4",
+          "eval": 290
+        },
+        "stockfish_elo_2880": {
+          "move": "g5f4",
+          "eval": 290
+        },
+        "Leela_nodes_10k": {
+          "move": "g5f4",
+          "eval": 312
+        },
+        "stockfish_elo_2790": {
+          "move": "g5f4",
+          "eval": 290
+        },
+        "stockfish_elo_2700": {
+          "move": "g5f4",
+          "eval": 290
+        },
+        "stockfish_elo_2610": {
+          "move": "g5f4",
+          "eval": 290
+        },
+        "stockfish_elo_2520": {
+          "move": "g5f4",
+          "eval": 290
+        },
+        "stockfish_elo_2412": {
+          "move": "g5d8",
+          "eval": 106
+        },
+        "Leela_nodes_1k": {
+          "move": "g5f4",
+          "eval": 312
+        },
+        "stockfish_elo_2250": {
+          "move": "g5f4",
+          "eval": 290
+        },
+        "stockfish_elo_2124": {
+          "move": "g5f4",
+          "eval": 290
+        },
+        "stockfish_elo_2007": {
+          "move": "g5f4",
+          "eval": 290
+        },
+        "maia_1900": {
+          "move": "g5f4",
+          "eval": 499
+        },
+        "maia_1800": {
+          "move": "g5f4",
+          "eval": 415
+        },
+        "Leela_nodes_100": {
+          "move": "g5f4",
+          "eval": 313
+        },
+        "maia_1700": {
+          "move": "g5f4",
+          "eval": 426
+        },
+        "maia_1600": {
+          "move": "g5f4",
+          "eval": 415
+        },
+        "maia_1500": {
+          "move": "g5f4",
+          "eval": 375
+        },
+        "maia_1400": {
+          "move": "g5f4",
+          "eval": 290
+        },
+        "stockfish_elo_1320": {
+          "move": "e8e5",
+          "eval": -86
+        },
+        "stockfish_elo_1450": {
+          "move": "g5f4",
+          "eval": 290
+        },
+        "stockfish_elo_1650": {
+          "move": "g5f4",
+          "eval": 290
+        },
+        "stockfish_elo_1850": {
+          "move": "g5d8",
+          "eval": 106
+        },
+        "stockfish_elo_2050": {
+          "move": "g5f4",
+          "eval": 290
+        },
+        "maia_1300": {
+          "move": "g5f4",
+          "eval": 257
+        },
+        "maia_1200": {
+          "move": "g5f4",
+          "eval": 198
+        },
+        "maia_1100": {
+          "move": "g5f4",
+          "eval": 188
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+Rating Analysis Results for Scenario: Top1_Focus - 2025-08-30 10:59:05
+==================================================
+
+Weights Used: {0: 1.0, 1: 0.1, 2: 0.01}
+
+         engine_name  hit_percentage  rating
+           maia_1100           45.75  1100.0
+           maia_1200           47.03  1200.0
+           maia_1300           46.45  1300.0
+           maia_1400           48.71  1400.0
+           maia_1500           49.02  1500.0
+   stockfish_nodes_5            1.79  1500.0
+           maia_1600           48.56  1600.0
+  stockfish_nodes_10            1.77  1600.0
+           maia_1700           48.85  1700.0
+  stockfish_nodes_15            1.77  1700.0
+           maia_1800           47.06  1800.0
+  stockfish_nodes_20            1.62  1800.0
+           maia_1900           48.73  1900.0
+  stockfish_nodes_30            1.79  1900.0
+  stockfish_nodes_40            1.60  2000.0
+  stockfish_nodes_50           47.28  2100.0
+ stockfish_nodes_200           48.61  2200.0
+ stockfish_nodes_500           47.30  2400.0
+  stockfish_nodes_2k           51.97  2600.0
+  stockfish_nodes_5k           57.16  2750.0
+ stockfish_nodes_10k           62.09  3000.0
+ stockfish_nodes_20k           62.75  3200.0
+ stockfish_nodes_50k           67.87  3300.0
+stockfish_nodes_100k           67.80  3400.0
+stockfish_nodes_250k           69.95  3500.0
+              dragon           70.03  3550.0
+  stockfish_nodes_1M           73.34  3600.0
+    stockfish_full_1           76.20  3650.0
+       Desjardins373           48.28     NaN
+
+==================================================
+Analysis Summary:
+  R-squared: 0.9350
+  Your (Desjardins373) Hit Percentage: 48.28%
+  Final Estimated Rating: 2105

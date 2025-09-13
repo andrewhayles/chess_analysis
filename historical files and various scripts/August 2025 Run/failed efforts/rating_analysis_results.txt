@@ -1,0 +1,46 @@
+Rating Analysis Results - 2025-08-28 13:22:52
+==================================================
+
+Fixed Weights Used for Analysis:
+  - Top Move (Rank 0): 1.0000
+  - 2nd Best (Rank 1): 0.5000
+  - 3rd Best (Rank 2): 0.2500
+
+==================================================
+Final Engine Data (including hypothetical engines):
+==================================================
+         engine_name  rating  adjusted_rating  hit_percentage
+           maia_1100  1100.0           1100.0           53.69
+           maia_1200  1200.0           1200.0           55.08
+           maia_1300  1300.0           1300.0           54.58
+           maia_1400  1400.0           1400.0           56.77
+           maia_1500  1500.0           1500.0           56.97
+           maia_1600  1600.0           1600.0           56.97
+           maia_1700  1700.0           1700.0           57.57
+           maia_1800  1800.0           1800.0           56.23
+           maia_1900  1900.0           1900.0           57.27
+  stockfish_nodes_50  2100.0           2425.0           55.83
+ stockfish_nodes_200  2200.0           2448.0           56.92
+ stockfish_nodes_500  2400.0           2338.0           56.18
+  stockfish_nodes_2k  2600.0           2558.0           61.30
+  stockfish_nodes_5k  2750.0           2678.0           66.04
+ stockfish_nodes_10k  3000.0           2795.0           70.42
+ stockfish_nodes_20k  3200.0           2812.0           71.02
+ stockfish_nodes_50k  3300.0           2943.0           75.60
+stockfish_nodes_100k  3400.0           2977.0           76.69
+stockfish_nodes_250k  3500.0           3029.0           78.39
+  stockfish_nodes_1M  3600.0           3133.0           81.37
+              dragon  3600.0           3600.0           90.00
+      stockfish_full  3650.0           3650.0           95.00
+       Desjardins373     NaN              NaN           56.52
+
+==================================================
+Analysis Summary (based on Stockfish & hypothetical engines):
+==================================================
+Your (Desjardins373) Hit Percentage: 56.52%
+
+Initial R-squared (before rating adjustment): 0.8599
+Initial Estimated Rating: 2301
+
+Adjusted R-squared (after rating adjustment): 0.9876
+Final Estimated Rating: 2440

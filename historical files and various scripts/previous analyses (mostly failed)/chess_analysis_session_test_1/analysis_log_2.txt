@@ -1,0 +1,45 @@
+2025-07-07 12:22:27,409 - MainProcess - INFO - Oracle: stockfish_full_1. Model builders: 32 engines.
+2025-07-07 12:22:46,318 - MainProcess - INFO - --- Starting Analysis for Game: sananabdulla10 vs. Desjardins373 ---
+2025-07-07 12:22:46,318 - MainProcess - INFO - Generating ground truth template with stockfish_full_1...
+2025-07-07 12:23:00,256 - MainProcess - INFO - --- (1/32) Simulating with Leela_nodes_1000k ---
+2025-07-07 12:24:25,149 - MainProcess - INFO - --- (2/32) Simulating with stockfish_elo_3190 ---
+2025-07-07 12:24:31,331 - MainProcess - INFO - --- (3/32) Simulating with stockfish_elo_3150 ---
+2025-07-07 12:24:37,456 - MainProcess - INFO - --- (4/32) Simulating with Leela_nodes_100k ---
+2025-07-07 12:26:07,734 - MainProcess - INFO - --- (5/32) Simulating with stockfish_elo_3060 ---
+2025-07-07 12:26:14,006 - MainProcess - INFO - --- (6/32) Simulating with stockfish_elo_2970 ---
+2025-07-07 12:26:20,125 - MainProcess - INFO - --- (7/32) Simulating with stockfish_elo_2880 ---
+2025-07-07 12:26:26,329 - MainProcess - INFO - --- (8/32) Simulating with Leela_nodes_10k ---
+2025-07-07 12:27:55,470 - MainProcess - INFO - --- (9/32) Simulating with stockfish_elo_2790 ---
+2025-07-07 12:28:01,431 - MainProcess - INFO - --- (10/32) Simulating with stockfish_elo_2700 ---
+2025-07-07 12:28:07,497 - MainProcess - INFO - --- (11/32) Simulating with stockfish_elo_2610 ---
+2025-07-07 12:28:13,692 - MainProcess - INFO - --- (12/32) Simulating with stockfish_elo_2520 ---
+2025-07-07 12:28:19,813 - MainProcess - INFO - --- (13/32) Simulating with stockfish_elo_2412 ---
+2025-07-07 12:28:26,133 - MainProcess - INFO - --- (14/32) Simulating with Leela_nodes_1k ---
+2025-07-07 12:29:49,289 - MainProcess - INFO - --- (15/32) Simulating with stockfish_elo_2250 ---
+2025-07-07 12:29:55,551 - MainProcess - INFO - --- (16/32) Simulating with stockfish_elo_2124 ---
+2025-07-07 12:30:01,648 - MainProcess - INFO - --- (17/32) Simulating with stockfish_elo_2007 ---
+2025-07-07 12:30:07,793 - MainProcess - INFO - --- (18/32) Simulating with maia_1900 ---
+2025-07-07 12:30:28,169 - MainProcess - INFO - --- (19/32) Simulating with maia_1800 ---
+2025-07-07 12:31:23,689 - MainProcess - INFO - --- (20/32) Simulating with Leela_nodes_100 ---
+2025-07-07 12:33:15,590 - MainProcess - INFO - --- (21/32) Simulating with maia_1700 ---
+2025-07-07 12:34:15,322 - MainProcess - INFO - --- (22/32) Simulating with maia_1600 ---
+2025-07-07 12:35:27,365 - MainProcess - INFO - --- (23/32) Simulating with maia_1500 ---
+2025-07-07 12:36:04,247 - MainProcess - INFO - --- (24/32) Simulating with maia_1400 ---
+2025-07-07 12:36:53,532 - MainProcess - INFO - --- (25/32) Simulating with stockfish_elo_1320 ---
+2025-07-07 12:36:58,317 - MainProcess - INFO - --- (26/32) Simulating with stockfish_elo_1450 ---
+2025-07-07 12:37:02,633 - MainProcess - INFO - --- (27/32) Simulating with stockfish_elo_1650 ---
+2025-07-07 12:37:06,966 - MainProcess - INFO - --- (28/32) Simulating with stockfish_elo_1850 ---
+2025-07-07 12:37:11,310 - MainProcess - INFO - --- (29/32) Simulating with stockfish_elo_2050 ---
+2025-07-07 12:37:15,571 - MainProcess - INFO - --- (30/32) Simulating with maia_1300 ---
+2025-07-07 12:38:15,328 - MainProcess - INFO - --- (31/32) Simulating with maia_1200 ---
+2025-07-07 12:39:13,278 - MainProcess - INFO - --- (32/32) Simulating with maia_1100 ---
+2025-07-07 12:40:37,130 - MainProcess - INFO - Calculating scores for all frameworks...
+2025-07-07 12:40:37,140 - MainProcess - INFO - 
+--- Framework R² Comparison ---
+2025-07-07 12:40:37,241 - MainProcess - INFO -   - RWPL        : R² = 0.3057
+2025-07-07 12:40:37,245 - MainProcess - INFO -   - CAI         : R² = 0.3237
+2025-07-07 12:40:37,251 - MainProcess - INFO -   - Impact      : R² = 0.3237
+2025-07-07 12:40:37,257 - MainProcess - INFO -   - Complexity  : R² = 1.0000
+2025-07-07 12:40:37,257 - MainProcess - INFO - --- Best Framework: Complexity (R² = 1.0000) ---
+
+2025-07-07 12:40:37,628 - MainProcess - INFO - Analysis complete. Graph saved to C:\Users\desja\Documents\Python_programs\chess_study\chess_analysis_session\framework_comparison_graph.png

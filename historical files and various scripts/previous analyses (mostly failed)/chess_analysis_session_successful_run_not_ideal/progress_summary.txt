@@ -1,0 +1,96 @@
+Chess Analysis Progress Report
+Session started: 20250704_181639
+Player to analyze: Desjardins373
+Found 84 games to analyze in 'goalgames.pgn'.
+--------------------------------------------------
+
+Game 1/84: Analyzing sananabdulla10 vs. Desjardins373...
+  -> Generating ground truth...
+  -> Ground truth generated for 19 positions.
+  -> Building performance model...
+    - Model data gathered for: stockfish_elo_3150 (19 moves)
+    - Model data gathered for: stockfish_elo_3095 (19 moves)
+    - Model data gathered for: stockfish_elo_3039 (19 moves)
+    - Model data gathered for: stockfish_elo_2984 (19 moves)
+    - Model data gathered for: stockfish_elo_2928 (19 moves)
+    - Model data gathered for: stockfish_elo_2873 (19 moves)
+    - Model data gathered for: stockfish_elo_2817 (19 moves)
+    - Model data gathered for: stockfish_elo_2762 (19 moves)
+    - Model data gathered for: stockfish_elo_2706 (19 moves)
+    - Model data gathered for: stockfish_elo_2651 (19 moves)
+    - Model data gathered for: stockfish_elo_2595 (19 moves)
+    - Model data gathered for: stockfish_elo_2540 (19 moves)
+    - Model data gathered for: stockfish_elo_2485 (19 moves)
+    - Model data gathered for: stockfish_elo_2374 (19 moves)
+    - Model data gathered for: stockfish_elo_2318 (19 moves)
+    - Model data gathered for: stockfish_elo_2263 (19 moves)
+    - Model data gathered for: stockfish_elo_2207 (19 moves)
+    - Model data gathered for: stockfish_elo_2152 (19 moves)
+    - Model data gathered for: stockfish_elo_2096 (19 moves)
+    - Model data gathered for: stockfish_elo_2041 (19 moves)
+    - Model data gathered for: stockfish_elo_1985 (19 moves)
+    - Model data gathered for: stockfish_elo_1930 (19 moves)
+    - Model data gathered for: stockfish_elo_1875 (19 moves)
+    - Model data gathered for: stockfish_elo_1819 (19 moves)
+    - Model data gathered for: stockfish_elo_1764 (19 moves)
+    - Model data gathered for: stockfish_elo_1708 (19 moves)
+    - Model data gathered for: stockfish_elo_1653 (19 moves)
+    - Model data gathered for: stockfish_elo_1542 (19 moves)
+    - Model data gathered for: stockfish_elo_1486 (19 moves)
+    - Model data gathered for: stockfish_elo_1431 (19 moves)
+    - Model data gathered for: stockfish_elo_1375 (19 moves)
+    - Model data gathered for: stockfish_elo_1320 (19 moves)
+  -> Model created (Polynomial) with R-squared: 0.7673
+  -> Analyzing player moves...
+-> SUCCESS. Estimated Rating: 1848. (Model: Polynomial, R²=0.767 on 19 moves)
+--------------------------------------------------
+
+Final Average Estimated Rating: 1848 Elo across 1 games.
+Chess Analysis Progress Report
+Session started: 20250704_193846
+Player to analyze: Desjardins373
+Found 83 games to analyze in 'goalgames.pgn'.
+--------------------------------------------------
+
+Game 2/83: Analyzing claudorios15 vs. Desjardins373...
+  -> Generating ground truth...
+  -> Ground truth generated for 27 positions.
+  -> Building performance model...
+    - Model data gathered for: stockfish_elo_3150 (27 moves)
+    - Model data gathered for: stockfish_elo_3095 (27 moves)
+    - Model data gathered for: stockfish_elo_3039 (27 moves)
+    - Model data gathered for: stockfish_elo_2984 (27 moves)
+    - Model data gathered for: stockfish_elo_2928 (27 moves)
+    - Model data gathered for: stockfish_elo_2873 (27 moves)
+    - Model data gathered for: stockfish_elo_2817 (27 moves)
+    - Model data gathered for: stockfish_elo_2762 (27 moves)
+    - Model data gathered for: stockfish_elo_2706 (27 moves)
+    - Model data gathered for: stockfish_elo_2651 (27 moves)
+    - Model data gathered for: stockfish_elo_2595 (27 moves)
+    - Model data gathered for: stockfish_elo_2540 (27 moves)
+    - Model data gathered for: stockfish_elo_2485 (27 moves)
+    - Model data gathered for: stockfish_elo_2374 (27 moves)
+    - Model data gathered for: stockfish_elo_2318 (27 moves)
+    - Model data gathered for: stockfish_elo_2263 (27 moves)
+    - Model data gathered for: stockfish_elo_2207 (27 moves)
+    - Model data gathered for: stockfish_elo_2152 (27 moves)
+    - Model data gathered for: stockfish_elo_2096 (27 moves)
+    - Model data gathered for: stockfish_elo_2041 (27 moves)
+    - Model data gathered for: stockfish_elo_1985 (27 moves)
+    - Model data gathered for: stockfish_elo_1930 (27 moves)
+    - Model data gathered for: stockfish_elo_1875 (27 moves)
+    - Model data gathered for: stockfish_elo_1819 (27 moves)
+    - Model data gathered for: stockfish_elo_1764 (27 moves)
+    - Model data gathered for: stockfish_elo_1708 (27 moves)
+    - Model data gathered for: stockfish_elo_1653 (27 moves)
+    - Model data gathered for: stockfish_elo_1542 (27 moves)
+    - Model data gathered for: stockfish_elo_1486 (27 moves)
+    - Model data gathered for: stockfish_elo_1431 (27 moves)
+    - Model data gathered for: stockfish_elo_1375 (27 moves)
+    - Model data gathered for: stockfish_elo_1320 (27 moves)
+  -> Model created (Polynomial) with R-squared: 0.7799
+  -> Analyzing player moves...
+-> SUCCESS. Estimated Rating: 2661. (Model: Polynomial, R²=0.780 on 27 moves)
+--------------------------------------------------
+
+Final Average Estimated Rating: 2254 Elo across 2 games.

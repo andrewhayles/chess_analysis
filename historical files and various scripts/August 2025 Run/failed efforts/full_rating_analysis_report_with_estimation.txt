@@ -1,0 +1,97 @@
+Full Rating Analysis Report - 2025-08-30 16:16:26
+Analysis includes rating estimation for player: 'Desjardins373'
+================================================================================
+
+--- Scenario: Top1_Only ---
+Weights: {0: 1.0, 1: 0.0, 2: 0.0}
+
+              Engine  Hit %
+       Desjardins373  46.61
+              dragon  69.56
+    stockfish_full_1  74.30
+  stockfish_nodes_10  46.50
+stockfish_nodes_100k  70.15
+ stockfish_nodes_10k  64.04
+  stockfish_nodes_15  46.40
+  stockfish_nodes_1M  75.17
+  stockfish_nodes_20  46.80
+ stockfish_nodes_200  49.66
+ stockfish_nodes_20k  65.91
+stockfish_nodes_250k  72.22
+  stockfish_nodes_2k  52.71
+  stockfish_nodes_30  47.09
+  stockfish_nodes_40  47.39
+   stockfish_nodes_5  46.70
+  stockfish_nodes_50  47.29
+ stockfish_nodes_500  48.47
+ stockfish_nodes_50k  69.85
+  stockfish_nodes_5k  57.64
+
+--- Rating Estimation for Desjardins373 ---
+Hit Percentage: 46.61%
+ESTIMATED ELO RATING: 1850
+
+--------------------------------------------------------------------------------
+
+--- Scenario: Balanced ---
+Weights: {0: 1.0, 1: 0.5, 2: 0.25}
+
+              Engine  Hit %
+       Desjardins373  56.52
+              dragon  79.68
+    stockfish_full_1  83.62
+  stockfish_nodes_10  57.34
+stockfish_nodes_100k  80.34
+ stockfish_nodes_10k  73.97
+  stockfish_nodes_15  57.24
+  stockfish_nodes_1M  84.16
+  stockfish_nodes_20  57.54
+ stockfish_nodes_200  60.05
+ stockfish_nodes_20k  75.81
+stockfish_nodes_250k  81.75
+  stockfish_nodes_2k  64.04
+  stockfish_nodes_30  57.64
+  stockfish_nodes_40  58.00
+   stockfish_nodes_5  57.41
+  stockfish_nodes_50  58.05
+ stockfish_nodes_500  60.07
+ stockfish_nodes_50k  79.33
+  stockfish_nodes_5k  68.72
+
+--- Rating Estimation for Desjardins373 ---
+Hit Percentage: 56.52%
+ESTIMATED ELO RATING: 1862
+
+--------------------------------------------------------------------------------
+
+--- Scenario: Linear_Decay ---
+Weights: {0: 1.0, 1: 0.66, 2: 0.33}
+
+              Engine  Hit %
+       Desjardins373  59.70
+              dragon  82.92
+    stockfish_full_1  86.60
+  stockfish_nodes_10  60.81
+stockfish_nodes_100k  83.61
+ stockfish_nodes_10k  77.14
+  stockfish_nodes_15  60.71
+  stockfish_nodes_1M  87.04
+  stockfish_nodes_20  60.97
+ stockfish_nodes_200  63.38
+ stockfish_nodes_20k  78.98
+stockfish_nodes_250k  84.80
+  stockfish_nodes_2k  67.67
+  stockfish_nodes_30  61.01
+  stockfish_nodes_40  61.40
+   stockfish_nodes_5  60.84
+  stockfish_nodes_50  61.50
+ stockfish_nodes_500  63.79
+ stockfish_nodes_50k  82.37
+  stockfish_nodes_5k  72.27
+
+--- Rating Estimation for Desjardins373 ---
+Hit Percentage: 59.70%
+ESTIMATED ELO RATING: 1968
+
+--------------------------------------------------------------------------------
+

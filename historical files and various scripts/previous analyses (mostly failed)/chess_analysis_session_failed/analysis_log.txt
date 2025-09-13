@@ -1,0 +1,16 @@
+2025-07-07 21:04:41,764 - MainProcess - INFO - Oracle: stockfish_full_1. Model builders: 18 engines.
+2025-07-07 21:05:21,417 - MainProcess - WARNING - New PGN/script version detected or no session found. Starting a new session.
+2025-07-07 21:05:21,417 - MainProcess - INFO - --- Starting Optimization Mode ---
+2025-07-07 21:05:21,417 - MainProcess - INFO - Step 1: Collecting simulation data from the training PGN...
+2025-07-07 21:05:21,609 - MainProcess - INFO - 
+--- Analyzing Game 1: Desjardins373 vs. tratohecho ---
+2025-07-07 21:20:19,485 - SpawnPoolWorker-1 - ERROR - Worker 'model_simulation' for maia_1300 on FEN 'r2qr1k1/2p3pp/p1p2p2/3p4/3P4/2Pb4/P2B1RPP/R2Q2K1 w - - 0 17' failed: 
+2025-07-07 21:25:26,028 - MainProcess - INFO - Saved progress for game 2025.03.06_Desjardins373_tratohecho_0 to session file.
+2025-07-07 21:25:26,032 - MainProcess - INFO - 
+--- Analyzing Game 2: Desjardins373 vs. JLundang ---
+2025-07-07 21:41:32,933 - MainProcess - INFO - Saved progress for game 2025.03.07_Desjardins373_JLundang_750 to session file.
+2025-07-07 21:41:32,935 - MainProcess - INFO - 
+--- Analyzing Game 3: dsinghteotia vs. Desjardins373 ---
+2025-07-07 22:06:40,756 - MainProcess - INFO - Saved progress for game 2025.03.07_dsinghteotia_Desjardins373_1556 to session file.
+2025-07-07 22:06:40,758 - MainProcess - INFO - 
+--- Analyzing Game 4: Desjardins373 vs. La_Toupie ---

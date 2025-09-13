@@ -1,4 +1,0 @@
-run_name,r_squared,num_moves,weights
-"Top 3 Moves, Linear Weights",0.4791211194379184,3,"[1.0, 0.5, 0.25]"
-"Top 5 Moves, Steep Decay",0.43352168276218106,5,"[1.0, 0.4, 0.2, 0.1, 0.05]"
-Top 1 Move Only,0.4230161632599927,1,[1.0]

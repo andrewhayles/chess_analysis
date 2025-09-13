@@ -1,0 +1,20 @@
+2025-07-07 22:38:11,372 - WARNING - Engine executable not found for 'maia_1100' at path 'C:\Users\desja\Documents\Python_programs\chess_study\engines\maia_1100\maia_1100.exe', skipping.
+2025-07-07 22:38:11,372 - WARNING - Engine executable not found for 'maia_1200' at path 'C:\Users\desja\Documents\Python_programs\chess_study\engines\maia_1200\maia_1200.exe', skipping.
+2025-07-07 22:38:11,372 - WARNING - Engine executable not found for 'maia_1300' at path 'C:\Users\desja\Documents\Python_programs\chess_study\engines\maia_1300\maia_1300.exe', skipping.
+2025-07-07 22:38:11,372 - WARNING - Engine executable not found for 'maia_1400' at path 'C:\Users\desja\Documents\Python_programs\chess_study\engines\maia_1400\maia_1400.exe', skipping.
+2025-07-07 22:38:11,384 - WARNING - Engine executable not found for 'maia_1500' at path 'C:\Users\desja\Documents\Python_programs\chess_study\engines\maia_1500\maia_1500.exe', skipping.
+2025-07-07 22:38:11,384 - WARNING - Engine executable not found for 'maia_1600' at path 'C:\Users\desja\Documents\Python_programs\chess_study\engines\maia_1600\maia_1600.exe', skipping.
+2025-07-07 22:38:11,387 - WARNING - Engine executable not found for 'maia_1700' at path 'C:\Users\desja\Documents\Python_programs\chess_study\engines\maia_1700\maia_1700.exe', skipping.
+2025-07-07 22:38:11,389 - WARNING - Engine executable not found for 'maia_1800' at path 'C:\Users\desja\Documents\Python_programs\chess_study\engines\maia_1800\maia_1800.exe', skipping.
+2025-07-07 22:38:11,389 - WARNING - Engine executable not found for 'maia_1900' at path 'C:\Users\desja\Documents\Python_programs\chess_study\engines\maia_1900\maia_1900.exe', skipping.
+2025-07-07 22:38:11,389 - WARNING - Engine executable not found for 'stockfish_elo_1320' at path 'C:\Users\desja\Documents\Python_programs\chess_study\engines\stockfish_elo_1320\stockfish_elo_1320.exe', skipping.
+2025-07-07 22:38:11,389 - WARNING - Engine executable not found for 'stockfish_elo_1450' at path 'C:\Users\desja\Documents\Python_programs\chess_study\engines\stockfish_elo_1450\stockfish_elo_1450.exe', skipping.
+2025-07-07 22:38:11,389 - WARNING - Engine executable not found for 'stockfish_elo_1550' at path 'C:\Users\desja\Documents\Python_programs\chess_study\engines\stockfish_elo_1550\stockfish_elo_1550.exe', skipping.
+2025-07-07 22:38:11,400 - WARNING - Engine executable not found for 'stockfish_elo_1650' at path 'C:\Users\desja\Documents\Python_programs\chess_study\engines\stockfish_elo_1650\stockfish_elo_1650.exe', skipping.
+2025-07-07 22:38:11,402 - WARNING - Engine executable not found for 'stockfish_elo_1750' at path 'C:\Users\desja\Documents\Python_programs\chess_study\engines\stockfish_elo_1750\stockfish_elo_1750.exe', skipping.
+2025-07-07 22:38:11,403 - WARNING - Engine executable not found for 'stockfish_elo_1850' at path 'C:\Users\desja\Documents\Python_programs\chess_study\engines\stockfish_elo_1850\stockfish_elo_1850.exe', skipping.
+2025-07-07 22:38:11,409 - WARNING - Engine executable not found for 'stockfish_elo_1950' at path 'C:\Users\desja\Documents\Python_programs\chess_study\engines\stockfish_elo_1950\stockfish_elo_1950.exe', skipping.
+2025-07-07 22:38:11,409 - WARNING - Engine executable not found for 'stockfish_elo_2007' at path 'C:\Users\desja\Documents\Python_programs\chess_study\engines\stockfish_elo_2007\stockfish_elo_2007.exe', skipping.
+2025-07-07 22:38:11,409 - WARNING - Engine executable not found for 'stockfish_elo_2050' at path 'C:\Users\desja\Documents\Python_programs\chess_study\engines\stockfish_elo_2050\stockfish_elo_2050.exe', skipping.
+2025-07-07 22:38:11,409 - WARNING - Engine executable not found for 'stockfish_full_1' at path 'C:\Users\desja\Documents\Python_programs\chess_study\engines\stockfish_full_1\stockfish_full_1.exe', skipping.
+2025-07-07 22:38:11,409 - ERROR - No valid engines found or loaded. Please check 'real_engines.csv' and your engine folder structure.

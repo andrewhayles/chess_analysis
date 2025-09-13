@@ -1,0 +1,12 @@
+Linear Regression Analysis Results
+==================================
+
+Rating extracted from column:  'engine_name'
+Independent Variable (X-axis): 'engine_rating'
+Dependent Variable (Y-axis):   'cai_score'
+
+R-squared (R²) Value: 0.0001
+
+Interpretation:
+The R² value indicates that approximately 0.01% of the variance in 'cai_score'
+can be explained by the linear relationship with 'engine_rating'.

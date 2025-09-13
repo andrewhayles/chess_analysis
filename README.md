@@ -38,6 +38,6 @@ All of the associated libraries indicated in the rating_estimate15.py file are n
 
 ## Contact
 
-Your Name - Andrew Hayles (andyhayles@gmail.com)
+Andrew Hayles (andyhayles@gmail.com)
 
 Project Link: [https://github.com/andrewhayles/chess_analysis](https://github.com/andrewhayles/chess_analysis)

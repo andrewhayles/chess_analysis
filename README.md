@@ -32,7 +32,8 @@ All of the associated libraries indicated in the rating_estimate15.py file are n
     ```
 2.  Install packages
 3.  Ensure rating_estimate15.py file names and player name are set and the PGN is in the same directory as the Python file etc.
-4.  Run rating_estimate15.py
+4.  Keep in mind, the oracle cache and the goalgames.pgn are the analysis of my personal games.  A new oracle cache will be generated if you put a new pgn file in with the Python file and set the program to analyze that particular PGN file and delete my oracle cache or simply rename it.
+5.  Run rating_estimate15.py
 
 
 ## Contact
